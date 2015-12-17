@@ -8,6 +8,9 @@ module.exports = function () {
     var escodegen = require('escodegen');
     var _ = require('lodash');
 
+    exports.findComponent = findComponent;
+    exports.processProgram = processProgram;
+
     var ANGULAR_COMPONENT = {
         MODULE: 'module',
         CONTROLLER: 'controller',
