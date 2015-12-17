@@ -2,7 +2,9 @@
  * Created by Parri on 12/16/2015.
  */
 
-module.exports = function () {
+/*global exports:true, require:true, global:true*/
+(function () {
+    'use strict';
 
     var esprima = require('esprima');
     var escodegen = require('escodegen');
@@ -10,6 +12,9 @@ module.exports = function () {
 
     exports.findComponent = findComponent;
     exports.processProgram = processProgram;
+
+    var fileList = [];
+    var currentFile = {};
 
     var ANGULAR_COMPONENT = {
         MODULE: 'module',
@@ -88,279 +93,7 @@ module.exports = function () {
     var callExpressionJson = {
         "type": "CallExpression",
         "callee": {},
-        "arguments": [
-            {
-                "type": "Literal",
-                "value": "A spec",
-                "raw": "\"A spec\""
-            },
-            {
-                "type": "FunctionExpression",
-                "id": null,
-                "params": [],
-                "defaults": [],
-                "body": {
-                    "type": "BlockStatement",
-                    "body": [
-                        {
-                            "type": "ExpressionStatement",
-                            "expression": {
-                                "type": "CallExpression",
-                                "callee": {
-                                    "type": "Identifier",
-                                    "name": "beforeEach"
-                                },
-                                "arguments": [
-                                    {
-                                        "type": "FunctionExpression",
-                                        "id": null,
-                                        "params": [],
-                                        "defaults": [],
-                                        "body": {
-                                            "type": "BlockStatement",
-                                            "body": [
-                                                {
-                                                    "type": "ExpressionStatement",
-                                                    "expression": {
-                                                        "type": "AssignmentExpression",
-                                                        "operator": "=",
-                                                        "left": {
-                                                            "type": "MemberExpression",
-                                                            "computed": false,
-                                                            "object": {
-                                                                "type": "ThisExpression"
-                                                            },
-                                                            "property": {
-                                                                "type": "Identifier",
-                                                                "name": "foo"
-                                                            }
-                                                        },
-                                                        "right": {
-                                                            "type": "Literal",
-                                                            "value": 0,
-                                                            "raw": "0"
-                                                        }
-                                                    }
-                                                }
-                                            ]
-                                        },
-                                        "generator": false,
-                                        "expression": false
-                                    }
-                                ]
-                            }
-                        },
-                        {
-                            "type": "ExpressionStatement",
-                            "expression": {
-                                "type": "CallExpression",
-                                "callee": {
-                                    "type": "Identifier",
-                                    "name": "it"
-                                },
-                                "arguments": [
-                                    {
-                                        "type": "Literal",
-                                        "value": "can use the `this` to share state",
-                                        "raw": "\"can use the `this` to share state\""
-                                    },
-                                    {
-                                        "type": "FunctionExpression",
-                                        "id": null,
-                                        "params": [],
-                                        "defaults": [],
-                                        "body": {
-                                            "type": "BlockStatement",
-                                            "body": [
-                                                {
-                                                    "type": "ExpressionStatement",
-                                                    "expression": {
-                                                        "type": "CallExpression",
-                                                        "callee": {
-                                                            "type": "MemberExpression",
-                                                            "computed": false,
-                                                            "object": {
-                                                                "type": "CallExpression",
-                                                                "callee": {
-                                                                    "type": "Identifier",
-                                                                    "name": "expect"
-                                                                },
-                                                                "arguments": [
-                                                                    {
-                                                                        "type": "MemberExpression",
-                                                                        "computed": false,
-                                                                        "object": {
-                                                                            "type": "ThisExpression"
-                                                                        },
-                                                                        "property": {
-                                                                            "type": "Identifier",
-                                                                            "name": "foo"
-                                                                        }
-                                                                    }
-                                                                ]
-                                                            },
-                                                            "property": {
-                                                                "type": "Identifier",
-                                                                "name": "toEqual"
-                                                            }
-                                                        },
-                                                        "arguments": [
-                                                            {
-                                                                "type": "Literal",
-                                                                "value": 0,
-                                                                "raw": "0"
-                                                            }
-                                                        ]
-                                                    }
-                                                },
-                                                {
-                                                    "type": "ExpressionStatement",
-                                                    "expression": {
-                                                        "type": "AssignmentExpression",
-                                                        "operator": "=",
-                                                        "left": {
-                                                            "type": "MemberExpression",
-                                                            "computed": false,
-                                                            "object": {
-                                                                "type": "ThisExpression"
-                                                            },
-                                                            "property": {
-                                                                "type": "Identifier",
-                                                                "name": "bar"
-                                                            }
-                                                        },
-                                                        "right": {
-                                                            "type": "Literal",
-                                                            "value": "test pollution?",
-                                                            "raw": "\"test pollution?\""
-                                                        }
-                                                    }
-                                                }
-                                            ]
-                                        },
-                                        "generator": false,
-                                        "expression": false
-                                    }
-                                ]
-                            }
-                        },
-                        {
-                            "type": "ExpressionStatement",
-                            "expression": {
-                                "type": "CallExpression",
-                                "callee": {
-                                    "type": "Identifier",
-                                    "name": "it"
-                                },
-                                "arguments": [
-                                    {
-                                        "type": "Literal",
-                                        "value": "prevents test pollution by having an empty `this` created for the next spec",
-                                        "raw": "\"prevents test pollution by having an empty `this` created for the next spec\""
-                                    },
-                                    {
-                                        "type": "FunctionExpression",
-                                        "id": null,
-                                        "params": [],
-                                        "defaults": [],
-                                        "body": {
-                                            "type": "BlockStatement",
-                                            "body": [
-                                                {
-                                                    "type": "ExpressionStatement",
-                                                    "expression": {
-                                                        "type": "CallExpression",
-                                                        "callee": {
-                                                            "type": "MemberExpression",
-                                                            "computed": false,
-                                                            "object": {
-                                                                "type": "CallExpression",
-                                                                "callee": {
-                                                                    "type": "Identifier",
-                                                                    "name": "expect"
-                                                                },
-                                                                "arguments": [
-                                                                    {
-                                                                        "type": "MemberExpression",
-                                                                        "computed": false,
-                                                                        "object": {
-                                                                            "type": "ThisExpression"
-                                                                        },
-                                                                        "property": {
-                                                                            "type": "Identifier",
-                                                                            "name": "foo"
-                                                                        }
-                                                                    }
-                                                                ]
-                                                            },
-                                                            "property": {
-                                                                "type": "Identifier",
-                                                                "name": "toEqual"
-                                                            }
-                                                        },
-                                                        "arguments": [
-                                                            {
-                                                                "type": "Literal",
-                                                                "value": 0,
-                                                                "raw": "0"
-                                                            }
-                                                        ]
-                                                    }
-                                                },
-                                                {
-                                                    "type": "ExpressionStatement",
-                                                    "expression": {
-                                                        "type": "CallExpression",
-                                                        "callee": {
-                                                            "type": "MemberExpression",
-                                                            "computed": false,
-                                                            "object": {
-                                                                "type": "CallExpression",
-                                                                "callee": {
-                                                                    "type": "Identifier",
-                                                                    "name": "expect"
-                                                                },
-                                                                "arguments": [
-                                                                    {
-                                                                        "type": "MemberExpression",
-                                                                        "computed": false,
-                                                                        "object": {
-                                                                            "type": "ThisExpression"
-                                                                        },
-                                                                        "property": {
-                                                                            "type": "Identifier",
-                                                                            "name": "bar"
-                                                                        }
-                                                                    }
-                                                                ]
-                                                            },
-                                                            "property": {
-                                                                "type": "Identifier",
-                                                                "name": "toBe"
-                                                            }
-                                                        },
-                                                        "arguments": [
-                                                            {
-                                                                "type": "Identifier",
-                                                                "name": "undefined"
-                                                            }
-                                                        ]
-                                                    }
-                                                }
-                                            ]
-                                        },
-                                        "generator": false,
-                                        "expression": false
-                                    }
-                                ]
-                            }
-                        }
-                    ]
-                },
-                "generator": false,
-                "expression": false
-            }
-        ]
+        "arguments": []
     };
 
     var calleeDescribeJson = {
@@ -421,7 +154,7 @@ module.exports = function () {
     };
 
     function processProgram(program) {
-        grunt.log.writeln(program.type);
+        console.log(program.type);
 
         currentFile.functionDeclarationList = currentFile.functionDeclarationList || [];
         currentFile.functionExpressionList = currentFile.functionExpressionList || [];
@@ -436,7 +169,7 @@ module.exports = function () {
     }
 
     function processStatement(statement) {
-        grunt.log.writeln(statement.type);
+        console.log(statement.type);
 
         if (statement.type === STATEMENT_TYPE.EXPRESSION) {
             processObject(statement.expression);
@@ -453,20 +186,20 @@ module.exports = function () {
             return;
         }
 
-        grunt.log.writeln(expression.type);
+        console.log(expression.type);
 
         if (expression.type === EXPRESSION_TYPE.CALL) {
-            //  grunt.log.writeln('arguments - ' + expression.arguments);
+            //  console.log('arguments - ' + expression.arguments);
             processObject(expression.callee);
 
             processObjectList(expression.arguments);
             currentFile.calleeList.push(expression);
         } else if (expression.type === EXPRESSION_TYPE.FUNCTION) {
-            //  grunt.log.writeln('id - ' + expression.id);
-            //  grunt.log.writeln('params - ' + expression.params);
-            grunt.log.writeln('defaults - ' + expression.defaults);
-            grunt.log.writeln('generator - ' + expression.generator);
-            grunt.log.writeln('expression - ' + expression.expression);
+            //  console.log('id - ' + expression.id);
+            //  console.log('params - ' + expression.params);
+            console.log('defaults - ' + expression.defaults);
+            console.log('generator - ' + expression.generator);
+            console.log('expression - ' + expression.expression);
 
             processObject(expression.id);
             processObjectList(expression.params);
@@ -476,7 +209,7 @@ module.exports = function () {
             currentFile.functionExpressionList.push(expression);
             // processObjectList(expression.body);
         } else if (expression.type === EXPRESSION_TYPE.ASSIGNMENT) {
-            grunt.log.writeln('operator - ' + expression.operator);
+            console.log('operator - ' + expression.operator);
 
             processObject(expression.left);
             processObject(expression.right);
@@ -484,12 +217,12 @@ module.exports = function () {
 
             checkScopeFunctionDeclaration(expression);
         } else if (expression.type === EXPRESSION_TYPE.ARRAY) {
-            grunt.log.writeln('operator - ' + expression.operator);
+            console.log('operator - ' + expression.operator);
 
             processObjectList(expression.elements);
             currentFile.arrayList.push(expression);
         } else if (expression.type === EXPRESSION_TYPE.MEMBER) {
-            grunt.log.writeln('computed - ' + expression.computed);
+            console.log('computed - ' + expression.computed);
 
             processObject(expression.object);
             processObject(expression.property);
@@ -514,7 +247,7 @@ module.exports = function () {
         }
 
         _.forEach(objectList, function (object, key) {
-            grunt.log.writeln(object.type);
+            console.log(object.type);
             processObject(object);
         });
     }
@@ -542,15 +275,15 @@ module.exports = function () {
         }
 
         if (declaration.type === DECLARATION_TYPE.VARIABLE_DECLARATION) {
-            grunt.log.writeln('kind - ' + declaration.kind);
+            console.log('kind - ' + declaration.kind);
             processObjectList(declaration.declarations);
         } else if (declaration.type === DECLARATION_TYPE.VARIABLE_DECLARATOR) {
             processObject(declaration.id);
             processObject(declaration.init);
         } else if (declaration.type === DECLARATION_TYPE.FUNCTION_DECLARATION) {
-            grunt.log.writeln('defaults - ' + declaration.defaults);
-            grunt.log.writeln('generator - ' + declaration.generator);
-            grunt.log.writeln('expression - ' + declaration.expression);
+            console.log('defaults - ' + declaration.defaults);
+            console.log('generator - ' + declaration.generator);
+            console.log('expression - ' + declaration.expression);
 
             processObject(declaration.id);
             processObjectList(declaration.params);
@@ -562,10 +295,10 @@ module.exports = function () {
 
     function processOther(other) {
         if (other.type === OTHER_TYPE.LITERAL) {
-            grunt.log.writeln('value - ' + other.value);
-            grunt.log.writeln('raw - ' + other.raw);
+            console.log('value - ' + other.value);
+            console.log('raw - ' + other.raw);
         } else if (other.type === OTHER_TYPE.IDENTIFIER) {
-            grunt.log.writeln('name - ' + other.name);
+            console.log('name - ' + other.name);
         }
     }
 
@@ -637,4 +370,4 @@ module.exports = function () {
 
     }
 
-};
+}());

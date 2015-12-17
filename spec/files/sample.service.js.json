@@ -1,0 +1,1748 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "FunctionExpression",
+          "id": null,
+          "params": [],
+          "defaults": [],
+          "body": {
+            "type": "BlockStatement",
+            "body": [
+              {
+                "type": "ExpressionStatement",
+                "expression": {
+                  "type": "Literal",
+                  "value": "use strict",
+                  "raw": "'use strict'"
+                }
+              },
+              {
+                "type": "ExpressionStatement",
+                "expression": {
+                  "type": "CallExpression",
+                  "callee": {
+                    "type": "MemberExpression",
+                    "computed": false,
+                    "object": {
+                      "type": "CallExpression",
+                      "callee": {
+                        "type": "MemberExpression",
+                        "computed": false,
+                        "object": {
+                          "type": "Identifier",
+                          "name": "angular"
+                        },
+                        "property": {
+                          "type": "Identifier",
+                          "name": "module"
+                        }
+                      },
+                      "arguments": [
+                        {
+                          "type": "Literal",
+                          "value": "module.sample",
+                          "raw": "'module.sample'"
+                        }
+                      ]
+                    },
+                    "property": {
+                      "type": "Identifier",
+                      "name": "service"
+                    }
+                  },
+                  "arguments": [
+                    {
+                      "type": "Literal",
+                      "value": "SampleService",
+                      "raw": "'SampleService'"
+                    },
+                    {
+                      "type": "Identifier",
+                      "name": "SampleService"
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "ExpressionStatement",
+                "expression": {
+                  "type": "AssignmentExpression",
+                  "operator": "=",
+                  "left": {
+                    "type": "MemberExpression",
+                    "computed": false,
+                    "object": {
+                      "type": "Identifier",
+                      "name": "SampleService"
+                    },
+                    "property": {
+                      "type": "Identifier",
+                      "name": "$inject"
+                    }
+                  },
+                  "right": {
+                    "type": "ArrayExpression",
+                    "elements": [
+                      {
+                        "type": "Literal",
+                        "value": "SampleConstant",
+                        "raw": "\"SampleConstant\""
+                      },
+                      {
+                        "type": "Literal",
+                        "value": "StringUtil",
+                        "raw": "\"StringUtil\""
+                      },
+                      {
+                        "type": "Literal",
+                        "value": "SampleModel",
+                        "raw": "\"SampleModel\""
+                      },
+                      {
+                        "type": "Literal",
+                        "value": "Sample",
+                        "raw": "\"Sample\""
+                      },
+                      {
+                        "type": "Literal",
+                        "value": "SessionUtil",
+                        "raw": "\"SessionUtil\""
+                      },
+                      {
+                        "type": "Literal",
+                        "value": "Application",
+                        "raw": "\"Application\""
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "type": "FunctionDeclaration",
+                "id": {
+                  "type": "Identifier",
+                  "name": "SampleService"
+                },
+                "params": [
+                  {
+                    "type": "Identifier",
+                    "name": "SampleConstant"
+                  },
+                  {
+                    "type": "Identifier",
+                    "name": "StringUtil"
+                  },
+                  {
+                    "type": "Identifier",
+                    "name": "SampleModel"
+                  },
+                  {
+                    "type": "Identifier",
+                    "name": "Sample"
+                  },
+                  {
+                    "type": "Identifier",
+                    "name": "SessionUtil"
+                  },
+                  {
+                    "type": "Identifier",
+                    "name": "Application"
+                  }
+                ],
+                "defaults": [],
+                "body": {
+                  "type": "BlockStatement",
+                  "body": [
+                    {
+                      "type": "VariableDeclaration",
+                      "declarations": [
+                        {
+                          "type": "VariableDeclarator",
+                          "id": {
+                            "type": "Identifier",
+                            "name": "service"
+                          },
+                          "init": {
+                            "type": "ThisExpression"
+                          }
+                        }
+                      ],
+                      "kind": "var"
+                    },
+                    {
+                      "type": "ExpressionStatement",
+                      "expression": {
+                        "type": "AssignmentExpression",
+                        "operator": "=",
+                        "left": {
+                          "type": "MemberExpression",
+                          "computed": false,
+                          "object": {
+                            "type": "Identifier",
+                            "name": "service"
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "getServiceURL"
+                          }
+                        },
+                        "right": {
+                          "type": "FunctionExpression",
+                          "id": null,
+                          "params": [
+                            {
+                              "type": "Identifier",
+                              "name": "serviceName"
+                            }
+                          ],
+                          "defaults": [],
+                          "body": {
+                            "type": "BlockStatement",
+                            "body": [
+                              {
+                                "type": "VariableDeclaration",
+                                "declarations": [
+                                  {
+                                    "type": "VariableDeclarator",
+                                    "id": {
+                                      "type": "Identifier",
+                                      "name": "restService"
+                                    },
+                                    "init": {
+                                      "type": "CallExpression",
+                                      "callee": {
+                                        "type": "MemberExpression",
+                                        "computed": false,
+                                        "object": {
+                                          "type": "Identifier",
+                                          "name": "SampleModel"
+                                        },
+                                        "property": {
+                                          "type": "Identifier",
+                                          "name": "newRestServiceModel"
+                                        }
+                                      },
+                                      "arguments": []
+                                    }
+                                  }
+                                ],
+                                "kind": "var"
+                              },
+                              {
+                                "type": "VariableDeclaration",
+                                "declarations": [
+                                  {
+                                    "type": "VariableDeclarator",
+                                    "id": {
+                                      "type": "Identifier",
+                                      "name": "appConfig"
+                                    },
+                                    "init": {
+                                      "type": "LogicalExpression",
+                                      "operator": "||",
+                                      "left": {
+                                        "type": "MemberExpression",
+                                        "computed": false,
+                                        "object": {
+                                          "type": "Identifier",
+                                          "name": "Sample"
+                                        },
+                                        "property": {
+                                          "type": "Identifier",
+                                          "name": "appConfig"
+                                        }
+                                      },
+                                      "right": {
+                                        "type": "CallExpression",
+                                        "callee": {
+                                          "type": "MemberExpression",
+                                          "computed": false,
+                                          "object": {
+                                            "type": "Identifier",
+                                            "name": "SessionUtil"
+                                          },
+                                          "property": {
+                                            "type": "Identifier",
+                                            "name": "loadFromSessionStorage"
+                                          }
+                                        },
+                                        "arguments": [
+                                          {
+                                            "type": "MemberExpression",
+                                            "computed": false,
+                                            "object": {
+                                              "type": "Identifier",
+                                              "name": "Application"
+                                            },
+                                            "property": {
+                                              "type": "Identifier",
+                                              "name": "appConfig"
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  }
+                                ],
+                                "kind": "var"
+                              },
+                              {
+                                "type": "IfStatement",
+                                "test": {
+                                  "type": "LogicalExpression",
+                                  "operator": "&&",
+                                  "left": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                      "type": "MemberExpression",
+                                      "computed": false,
+                                      "object": {
+                                        "type": "Identifier",
+                                        "name": "StringUtil"
+                                      },
+                                      "property": {
+                                        "type": "Identifier",
+                                        "name": "validObject"
+                                      }
+                                    },
+                                    "arguments": [
+                                      {
+                                        "type": "Identifier",
+                                        "name": "appConfig"
+                                      }
+                                    ]
+                                  },
+                                  "right": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                      "type": "MemberExpression",
+                                      "computed": false,
+                                      "object": {
+                                        "type": "Identifier",
+                                        "name": "StringUtil"
+                                      },
+                                      "property": {
+                                        "type": "Identifier",
+                                        "name": "validObject"
+                                      }
+                                    },
+                                    "arguments": [
+                                      {
+                                        "type": "MemberExpression",
+                                        "computed": false,
+                                        "object": {
+                                          "type": "Identifier",
+                                          "name": "appConfig"
+                                        },
+                                        "property": {
+                                          "type": "Identifier",
+                                          "name": "services"
+                                        }
+                                      }
+                                    ]
+                                  }
+                                },
+                                "consequent": {
+                                  "type": "BlockStatement",
+                                  "body": [
+                                    {
+                                      "type": "ExpressionStatement",
+                                      "expression": {
+                                        "type": "AssignmentExpression",
+                                        "operator": "=",
+                                        "left": {
+                                          "type": "Identifier",
+                                          "name": "restService"
+                                        },
+                                        "right": {
+                                          "type": "MemberExpression",
+                                          "computed": true,
+                                          "object": {
+                                            "type": "MemberExpression",
+                                            "computed": false,
+                                            "object": {
+                                              "type": "Identifier",
+                                              "name": "appConfig"
+                                            },
+                                            "property": {
+                                              "type": "Identifier",
+                                              "name": "services"
+                                            }
+                                          },
+                                          "property": {
+                                            "type": "Identifier",
+                                            "name": "serviceName"
+                                          }
+                                        }
+                                      }
+                                    }
+                                  ]
+                                },
+                                "alternate": null
+                              },
+                              {
+                                "type": "ReturnStatement",
+                                "argument": {
+                                  "type": "Identifier",
+                                  "name": "restService"
+                                }
+                              }
+                            ]
+                          },
+                          "generator": false,
+                          "expression": false
+                        }
+                      }
+                    },
+                    {
+                      "type": "ExpressionStatement",
+                      "expression": {
+                        "type": "AssignmentExpression",
+                        "operator": "=",
+                        "left": {
+                          "type": "MemberExpression",
+                          "computed": false,
+                          "object": {
+                            "type": "Identifier",
+                            "name": "service"
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "getServiceList"
+                          }
+                        },
+                        "right": {
+                          "type": "FunctionExpression",
+                          "id": null,
+                          "params": [],
+                          "defaults": [],
+                          "body": {
+                            "type": "BlockStatement",
+                            "body": [
+                              {
+                                "type": "VariableDeclaration",
+                                "declarations": [
+                                  {
+                                    "type": "VariableDeclarator",
+                                    "id": {
+                                      "type": "Identifier",
+                                      "name": "serviceList"
+                                    },
+                                    "init": {
+                                      "type": "ArrayExpression",
+                                      "elements": []
+                                    }
+                                  }
+                                ],
+                                "kind": "var"
+                              },
+                              {
+                                "type": "VariableDeclaration",
+                                "declarations": [
+                                  {
+                                    "type": "VariableDeclarator",
+                                    "id": {
+                                      "type": "Identifier",
+                                      "name": "appConfig"
+                                    },
+                                    "init": {
+                                      "type": "LogicalExpression",
+                                      "operator": "||",
+                                      "left": {
+                                        "type": "MemberExpression",
+                                        "computed": false,
+                                        "object": {
+                                          "type": "Identifier",
+                                          "name": "Sample"
+                                        },
+                                        "property": {
+                                          "type": "Identifier",
+                                          "name": "appConfig"
+                                        }
+                                      },
+                                      "right": {
+                                        "type": "CallExpression",
+                                        "callee": {
+                                          "type": "MemberExpression",
+                                          "computed": false,
+                                          "object": {
+                                            "type": "Identifier",
+                                            "name": "SessionUtil"
+                                          },
+                                          "property": {
+                                            "type": "Identifier",
+                                            "name": "loadFromSessionStorage"
+                                          }
+                                        },
+                                        "arguments": [
+                                          {
+                                            "type": "MemberExpression",
+                                            "computed": false,
+                                            "object": {
+                                              "type": "Identifier",
+                                              "name": "Application"
+                                            },
+                                            "property": {
+                                              "type": "Identifier",
+                                              "name": "appConfig"
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  }
+                                ],
+                                "kind": "var"
+                              },
+                              {
+                                "type": "IfStatement",
+                                "test": {
+                                  "type": "LogicalExpression",
+                                  "operator": "&&",
+                                  "left": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                      "type": "MemberExpression",
+                                      "computed": false,
+                                      "object": {
+                                        "type": "Identifier",
+                                        "name": "StringUtil"
+                                      },
+                                      "property": {
+                                        "type": "Identifier",
+                                        "name": "validObject"
+                                      }
+                                    },
+                                    "arguments": [
+                                      {
+                                        "type": "Identifier",
+                                        "name": "appConfig"
+                                      }
+                                    ]
+                                  },
+                                  "right": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                      "type": "MemberExpression",
+                                      "computed": false,
+                                      "object": {
+                                        "type": "Identifier",
+                                        "name": "StringUtil"
+                                      },
+                                      "property": {
+                                        "type": "Identifier",
+                                        "name": "validObject"
+                                      }
+                                    },
+                                    "arguments": [
+                                      {
+                                        "type": "MemberExpression",
+                                        "computed": false,
+                                        "object": {
+                                          "type": "Identifier",
+                                          "name": "appConfig"
+                                        },
+                                        "property": {
+                                          "type": "Identifier",
+                                          "name": "services"
+                                        }
+                                      }
+                                    ]
+                                  }
+                                },
+                                "consequent": {
+                                  "type": "BlockStatement",
+                                  "body": [
+                                    {
+                                      "type": "ExpressionStatement",
+                                      "expression": {
+                                        "type": "CallExpression",
+                                        "callee": {
+                                          "type": "MemberExpression",
+                                          "computed": false,
+                                          "object": {
+                                            "type": "Identifier",
+                                            "name": "angular"
+                                          },
+                                          "property": {
+                                            "type": "Identifier",
+                                            "name": "forEach"
+                                          }
+                                        },
+                                        "arguments": [
+                                          {
+                                            "type": "MemberExpression",
+                                            "computed": false,
+                                            "object": {
+                                              "type": "Identifier",
+                                              "name": "appConfig"
+                                            },
+                                            "property": {
+                                              "type": "Identifier",
+                                              "name": "services"
+                                            }
+                                          },
+                                          {
+                                            "type": "FunctionExpression",
+                                            "id": null,
+                                            "params": [
+                                              {
+                                                "type": "Identifier",
+                                                "name": "value"
+                                              },
+                                              {
+                                                "type": "Identifier",
+                                                "name": "key"
+                                              }
+                                            ],
+                                            "defaults": [],
+                                            "body": {
+                                              "type": "BlockStatement",
+                                              "body": [
+                                                {
+                                                  "type": "ExpressionStatement",
+                                                  "expression": {
+                                                    "type": "CallExpression",
+                                                    "callee": {
+                                                      "type": "MemberExpression",
+                                                      "computed": false,
+                                                      "object": {
+                                                        "type": "Identifier",
+                                                        "name": "serviceList"
+                                                      },
+                                                      "property": {
+                                                        "type": "Identifier",
+                                                        "name": "push"
+                                                      }
+                                                    },
+                                                    "arguments": [
+                                                      {
+                                                        "type": "Identifier",
+                                                        "name": "value"
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            },
+                                            "generator": false,
+                                            "expression": false
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                },
+                                "alternate": null
+                              },
+                              {
+                                "type": "ReturnStatement",
+                                "argument": {
+                                  "type": "Identifier",
+                                  "name": "serviceList"
+                                }
+                              }
+                            ]
+                          },
+                          "generator": false,
+                          "expression": false
+                        }
+                      }
+                    },
+                    {
+                      "type": "ExpressionStatement",
+                      "expression": {
+                        "type": "AssignmentExpression",
+                        "operator": "=",
+                        "left": {
+                          "type": "MemberExpression",
+                          "computed": false,
+                          "object": {
+                            "type": "Identifier",
+                            "name": "service"
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "getOtherAppList"
+                          }
+                        },
+                        "right": {
+                          "type": "FunctionExpression",
+                          "id": null,
+                          "params": [],
+                          "defaults": [],
+                          "body": {
+                            "type": "BlockStatement",
+                            "body": [
+                              {
+                                "type": "VariableDeclaration",
+                                "declarations": [
+                                  {
+                                    "type": "VariableDeclarator",
+                                    "id": {
+                                      "type": "Identifier",
+                                      "name": "otherAppList"
+                                    },
+                                    "init": {
+                                      "type": "ArrayExpression",
+                                      "elements": []
+                                    }
+                                  }
+                                ],
+                                "kind": "var"
+                              },
+                              {
+                                "type": "VariableDeclaration",
+                                "declarations": [
+                                  {
+                                    "type": "VariableDeclarator",
+                                    "id": {
+                                      "type": "Identifier",
+                                      "name": "appConfig"
+                                    },
+                                    "init": {
+                                      "type": "LogicalExpression",
+                                      "operator": "||",
+                                      "left": {
+                                        "type": "MemberExpression",
+                                        "computed": false,
+                                        "object": {
+                                          "type": "Identifier",
+                                          "name": "Sample"
+                                        },
+                                        "property": {
+                                          "type": "Identifier",
+                                          "name": "appConfig"
+                                        }
+                                      },
+                                      "right": {
+                                        "type": "CallExpression",
+                                        "callee": {
+                                          "type": "MemberExpression",
+                                          "computed": false,
+                                          "object": {
+                                            "type": "Identifier",
+                                            "name": "SessionUtil"
+                                          },
+                                          "property": {
+                                            "type": "Identifier",
+                                            "name": "loadFromSessionStorage"
+                                          }
+                                        },
+                                        "arguments": [
+                                          {
+                                            "type": "MemberExpression",
+                                            "computed": false,
+                                            "object": {
+                                              "type": "Identifier",
+                                              "name": "Application"
+                                            },
+                                            "property": {
+                                              "type": "Identifier",
+                                              "name": "appConfig"
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  }
+                                ],
+                                "kind": "var"
+                              },
+                              {
+                                "type": "IfStatement",
+                                "test": {
+                                  "type": "LogicalExpression",
+                                  "operator": "&&",
+                                  "left": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                      "type": "MemberExpression",
+                                      "computed": false,
+                                      "object": {
+                                        "type": "Identifier",
+                                        "name": "StringUtil"
+                                      },
+                                      "property": {
+                                        "type": "Identifier",
+                                        "name": "validObject"
+                                      }
+                                    },
+                                    "arguments": [
+                                      {
+                                        "type": "Identifier",
+                                        "name": "appConfig"
+                                      }
+                                    ]
+                                  },
+                                  "right": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                      "type": "MemberExpression",
+                                      "computed": false,
+                                      "object": {
+                                        "type": "Identifier",
+                                        "name": "StringUtil"
+                                      },
+                                      "property": {
+                                        "type": "Identifier",
+                                        "name": "validObject"
+                                      }
+                                    },
+                                    "arguments": [
+                                      {
+                                        "type": "MemberExpression",
+                                        "computed": false,
+                                        "object": {
+                                          "type": "Identifier",
+                                          "name": "appConfig"
+                                        },
+                                        "property": {
+                                          "type": "Identifier",
+                                          "name": "otherApps"
+                                        }
+                                      }
+                                    ]
+                                  }
+                                },
+                                "consequent": {
+                                  "type": "BlockStatement",
+                                  "body": [
+                                    {
+                                      "type": "ExpressionStatement",
+                                      "expression": {
+                                        "type": "CallExpression",
+                                        "callee": {
+                                          "type": "MemberExpression",
+                                          "computed": false,
+                                          "object": {
+                                            "type": "Identifier",
+                                            "name": "angular"
+                                          },
+                                          "property": {
+                                            "type": "Identifier",
+                                            "name": "forEach"
+                                          }
+                                        },
+                                        "arguments": [
+                                          {
+                                            "type": "MemberExpression",
+                                            "computed": false,
+                                            "object": {
+                                              "type": "Identifier",
+                                              "name": "appConfig"
+                                            },
+                                            "property": {
+                                              "type": "Identifier",
+                                              "name": "otherApps"
+                                            }
+                                          },
+                                          {
+                                            "type": "FunctionExpression",
+                                            "id": null,
+                                            "params": [
+                                              {
+                                                "type": "Identifier",
+                                                "name": "value"
+                                              },
+                                              {
+                                                "type": "Identifier",
+                                                "name": "key"
+                                              }
+                                            ],
+                                            "defaults": [],
+                                            "body": {
+                                              "type": "BlockStatement",
+                                              "body": [
+                                                {
+                                                  "type": "ExpressionStatement",
+                                                  "expression": {
+                                                    "type": "CallExpression",
+                                                    "callee": {
+                                                      "type": "MemberExpression",
+                                                      "computed": false,
+                                                      "object": {
+                                                        "type": "Identifier",
+                                                        "name": "otherAppList"
+                                                      },
+                                                      "property": {
+                                                        "type": "Identifier",
+                                                        "name": "push"
+                                                      }
+                                                    },
+                                                    "arguments": [
+                                                      {
+                                                        "type": "Identifier",
+                                                        "name": "value"
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            },
+                                            "generator": false,
+                                            "expression": false
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                },
+                                "alternate": null
+                              },
+                              {
+                                "type": "ReturnStatement",
+                                "argument": {
+                                  "type": "Identifier",
+                                  "name": "otherAppList"
+                                }
+                              }
+                            ]
+                          },
+                          "generator": false,
+                          "expression": false
+                        }
+                      }
+                    },
+                    {
+                      "type": "ExpressionStatement",
+                      "expression": {
+                        "type": "AssignmentExpression",
+                        "operator": "=",
+                        "left": {
+                          "type": "MemberExpression",
+                          "computed": false,
+                          "object": {
+                            "type": "Identifier",
+                            "name": "service"
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "getShowOtherAppsURL"
+                          }
+                        },
+                        "right": {
+                          "type": "FunctionExpression",
+                          "id": null,
+                          "params": [],
+                          "defaults": [],
+                          "body": {
+                            "type": "BlockStatement",
+                            "body": [
+                              {
+                                "type": "VariableDeclaration",
+                                "declarations": [
+                                  {
+                                    "type": "VariableDeclarator",
+                                    "id": {
+                                      "type": "Identifier",
+                                      "name": "showOtherAppsURL"
+                                    },
+                                    "init": {
+                                      "type": "Literal",
+                                      "value": false,
+                                      "raw": "false"
+                                    }
+                                  }
+                                ],
+                                "kind": "var"
+                              },
+                              {
+                                "type": "VariableDeclaration",
+                                "declarations": [
+                                  {
+                                    "type": "VariableDeclarator",
+                                    "id": {
+                                      "type": "Identifier",
+                                      "name": "appConfig"
+                                    },
+                                    "init": {
+                                      "type": "LogicalExpression",
+                                      "operator": "||",
+                                      "left": {
+                                        "type": "MemberExpression",
+                                        "computed": false,
+                                        "object": {
+                                          "type": "Identifier",
+                                          "name": "Sample"
+                                        },
+                                        "property": {
+                                          "type": "Identifier",
+                                          "name": "appConfig"
+                                        }
+                                      },
+                                      "right": {
+                                        "type": "CallExpression",
+                                        "callee": {
+                                          "type": "MemberExpression",
+                                          "computed": false,
+                                          "object": {
+                                            "type": "Identifier",
+                                            "name": "SessionUtil"
+                                          },
+                                          "property": {
+                                            "type": "Identifier",
+                                            "name": "loadFromSessionStorage"
+                                          }
+                                        },
+                                        "arguments": [
+                                          {
+                                            "type": "MemberExpression",
+                                            "computed": false,
+                                            "object": {
+                                              "type": "Identifier",
+                                              "name": "Application"
+                                            },
+                                            "property": {
+                                              "type": "Identifier",
+                                              "name": "appConfig"
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  }
+                                ],
+                                "kind": "var"
+                              },
+                              {
+                                "type": "IfStatement",
+                                "test": {
+                                  "type": "CallExpression",
+                                  "callee": {
+                                    "type": "MemberExpression",
+                                    "computed": false,
+                                    "object": {
+                                      "type": "Identifier",
+                                      "name": "StringUtil"
+                                    },
+                                    "property": {
+                                      "type": "Identifier",
+                                      "name": "validObject"
+                                    }
+                                  },
+                                  "arguments": [
+                                    {
+                                      "type": "Identifier",
+                                      "name": "appConfig"
+                                    }
+                                  ]
+                                },
+                                "consequent": {
+                                  "type": "BlockStatement",
+                                  "body": [
+                                    {
+                                      "type": "ExpressionStatement",
+                                      "expression": {
+                                        "type": "AssignmentExpression",
+                                        "operator": "=",
+                                        "left": {
+                                          "type": "Identifier",
+                                          "name": "showOtherAppsURL"
+                                        },
+                                        "right": {
+                                          "type": "MemberExpression",
+                                          "computed": false,
+                                          "object": {
+                                            "type": "Identifier",
+                                            "name": "appConfig"
+                                          },
+                                          "property": {
+                                            "type": "Identifier",
+                                            "name": "showOtherAppsURL"
+                                          }
+                                        }
+                                      }
+                                    }
+                                  ]
+                                },
+                                "alternate": null
+                              },
+                              {
+                                "type": "ReturnStatement",
+                                "argument": {
+                                  "type": "Identifier",
+                                  "name": "showOtherAppsURL"
+                                }
+                              }
+                            ]
+                          },
+                          "generator": false,
+                          "expression": false
+                        }
+                      }
+                    },
+                    {
+                      "type": "ExpressionStatement",
+                      "expression": {
+                        "type": "AssignmentExpression",
+                        "operator": "=",
+                        "left": {
+                          "type": "MemberExpression",
+                          "computed": false,
+                          "object": {
+                            "type": "Identifier",
+                            "name": "service"
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "getMenuList"
+                          }
+                        },
+                        "right": {
+                          "type": "FunctionExpression",
+                          "id": null,
+                          "params": [],
+                          "defaults": [],
+                          "body": {
+                            "type": "BlockStatement",
+                            "body": [
+                              {
+                                "type": "VariableDeclaration",
+                                "declarations": [
+                                  {
+                                    "type": "VariableDeclarator",
+                                    "id": {
+                                      "type": "Identifier",
+                                      "name": "menuList"
+                                    },
+                                    "init": {
+                                      "type": "ArrayExpression",
+                                      "elements": []
+                                    }
+                                  }
+                                ],
+                                "kind": "var"
+                              },
+                              {
+                                "type": "VariableDeclaration",
+                                "declarations": [
+                                  {
+                                    "type": "VariableDeclarator",
+                                    "id": {
+                                      "type": "Identifier",
+                                      "name": "appConfig"
+                                    },
+                                    "init": {
+                                      "type": "LogicalExpression",
+                                      "operator": "||",
+                                      "left": {
+                                        "type": "MemberExpression",
+                                        "computed": false,
+                                        "object": {
+                                          "type": "Identifier",
+                                          "name": "Sample"
+                                        },
+                                        "property": {
+                                          "type": "Identifier",
+                                          "name": "appConfig"
+                                        }
+                                      },
+                                      "right": {
+                                        "type": "CallExpression",
+                                        "callee": {
+                                          "type": "MemberExpression",
+                                          "computed": false,
+                                          "object": {
+                                            "type": "Identifier",
+                                            "name": "SessionUtil"
+                                          },
+                                          "property": {
+                                            "type": "Identifier",
+                                            "name": "loadFromSessionStorage"
+                                          }
+                                        },
+                                        "arguments": [
+                                          {
+                                            "type": "MemberExpression",
+                                            "computed": false,
+                                            "object": {
+                                              "type": "Identifier",
+                                              "name": "Application"
+                                            },
+                                            "property": {
+                                              "type": "Identifier",
+                                              "name": "appConfig"
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  }
+                                ],
+                                "kind": "var"
+                              },
+                              {
+                                "type": "IfStatement",
+                                "test": {
+                                  "type": "LogicalExpression",
+                                  "operator": "&&",
+                                  "left": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                      "type": "MemberExpression",
+                                      "computed": false,
+                                      "object": {
+                                        "type": "Identifier",
+                                        "name": "StringUtil"
+                                      },
+                                      "property": {
+                                        "type": "Identifier",
+                                        "name": "validObject"
+                                      }
+                                    },
+                                    "arguments": [
+                                      {
+                                        "type": "Identifier",
+                                        "name": "appConfig"
+                                      }
+                                    ]
+                                  },
+                                  "right": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                      "type": "MemberExpression",
+                                      "computed": false,
+                                      "object": {
+                                        "type": "Identifier",
+                                        "name": "StringUtil"
+                                      },
+                                      "property": {
+                                        "type": "Identifier",
+                                        "name": "validList"
+                                      }
+                                    },
+                                    "arguments": [
+                                      {
+                                        "type": "MemberExpression",
+                                        "computed": false,
+                                        "object": {
+                                          "type": "Identifier",
+                                          "name": "appConfig"
+                                        },
+                                        "property": {
+                                          "type": "Identifier",
+                                          "name": "menuList"
+                                        }
+                                      }
+                                    ]
+                                  }
+                                },
+                                "consequent": {
+                                  "type": "BlockStatement",
+                                  "body": [
+                                    {
+                                      "type": "ReturnStatement",
+                                      "argument": {
+                                        "type": "MemberExpression",
+                                        "computed": false,
+                                        "object": {
+                                          "type": "Identifier",
+                                          "name": "appConfig"
+                                        },
+                                        "property": {
+                                          "type": "Identifier",
+                                          "name": "menuList"
+                                        }
+                                      }
+                                    }
+                                  ]
+                                },
+                                "alternate": null
+                              },
+                              {
+                                "type": "ReturnStatement",
+                                "argument": {
+                                  "type": "Identifier",
+                                  "name": "menuList"
+                                }
+                              }
+                            ]
+                          },
+                          "generator": false,
+                          "expression": false
+                        }
+                      }
+                    },
+                    {
+                      "type": "ExpressionStatement",
+                      "expression": {
+                        "type": "AssignmentExpression",
+                        "operator": "=",
+                        "left": {
+                          "type": "MemberExpression",
+                          "computed": false,
+                          "object": {
+                            "type": "Identifier",
+                            "name": "service"
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "getMenuMap"
+                          }
+                        },
+                        "right": {
+                          "type": "FunctionExpression",
+                          "id": null,
+                          "params": [],
+                          "defaults": [],
+                          "body": {
+                            "type": "BlockStatement",
+                            "body": [
+                              {
+                                "type": "VariableDeclaration",
+                                "declarations": [
+                                  {
+                                    "type": "VariableDeclarator",
+                                    "id": {
+                                      "type": "Identifier",
+                                      "name": "menuMap"
+                                    },
+                                    "init": {
+                                      "type": "ObjectExpression",
+                                      "properties": []
+                                    }
+                                  }
+                                ],
+                                "kind": "var"
+                              },
+                              {
+                                "type": "VariableDeclaration",
+                                "declarations": [
+                                  {
+                                    "type": "VariableDeclarator",
+                                    "id": {
+                                      "type": "Identifier",
+                                      "name": "appConfig"
+                                    },
+                                    "init": {
+                                      "type": "LogicalExpression",
+                                      "operator": "||",
+                                      "left": {
+                                        "type": "MemberExpression",
+                                        "computed": false,
+                                        "object": {
+                                          "type": "Identifier",
+                                          "name": "Sample"
+                                        },
+                                        "property": {
+                                          "type": "Identifier",
+                                          "name": "appConfig"
+                                        }
+                                      },
+                                      "right": {
+                                        "type": "CallExpression",
+                                        "callee": {
+                                          "type": "MemberExpression",
+                                          "computed": false,
+                                          "object": {
+                                            "type": "Identifier",
+                                            "name": "SessionUtil"
+                                          },
+                                          "property": {
+                                            "type": "Identifier",
+                                            "name": "loadFromSessionStorage"
+                                          }
+                                        },
+                                        "arguments": [
+                                          {
+                                            "type": "MemberExpression",
+                                            "computed": false,
+                                            "object": {
+                                              "type": "Identifier",
+                                              "name": "Application"
+                                            },
+                                            "property": {
+                                              "type": "Identifier",
+                                              "name": "appConfig"
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  }
+                                ],
+                                "kind": "var"
+                              },
+                              {
+                                "type": "IfStatement",
+                                "test": {
+                                  "type": "LogicalExpression",
+                                  "operator": "&&",
+                                  "left": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                      "type": "MemberExpression",
+                                      "computed": false,
+                                      "object": {
+                                        "type": "Identifier",
+                                        "name": "StringUtil"
+                                      },
+                                      "property": {
+                                        "type": "Identifier",
+                                        "name": "validObject"
+                                      }
+                                    },
+                                    "arguments": [
+                                      {
+                                        "type": "Identifier",
+                                        "name": "appConfig"
+                                      }
+                                    ]
+                                  },
+                                  "right": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                      "type": "MemberExpression",
+                                      "computed": false,
+                                      "object": {
+                                        "type": "Identifier",
+                                        "name": "StringUtil"
+                                      },
+                                      "property": {
+                                        "type": "Identifier",
+                                        "name": "validList"
+                                      }
+                                    },
+                                    "arguments": [
+                                      {
+                                        "type": "MemberExpression",
+                                        "computed": false,
+                                        "object": {
+                                          "type": "Identifier",
+                                          "name": "appConfig"
+                                        },
+                                        "property": {
+                                          "type": "Identifier",
+                                          "name": "menuList"
+                                        }
+                                      }
+                                    ]
+                                  }
+                                },
+                                "consequent": {
+                                  "type": "BlockStatement",
+                                  "body": [
+                                    {
+                                      "type": "ExpressionStatement",
+                                      "expression": {
+                                        "type": "CallExpression",
+                                        "callee": {
+                                          "type": "MemberExpression",
+                                          "computed": false,
+                                          "object": {
+                                            "type": "Identifier",
+                                            "name": "angular"
+                                          },
+                                          "property": {
+                                            "type": "Identifier",
+                                            "name": "forEach"
+                                          }
+                                        },
+                                        "arguments": [
+                                          {
+                                            "type": "MemberExpression",
+                                            "computed": false,
+                                            "object": {
+                                              "type": "Identifier",
+                                              "name": "appConfig"
+                                            },
+                                            "property": {
+                                              "type": "Identifier",
+                                              "name": "menuList"
+                                            }
+                                          },
+                                          {
+                                            "type": "FunctionExpression",
+                                            "id": null,
+                                            "params": [
+                                              {
+                                                "type": "Identifier",
+                                                "name": "menu"
+                                              },
+                                              {
+                                                "type": "Identifier",
+                                                "name": "key"
+                                              }
+                                            ],
+                                            "defaults": [],
+                                            "body": {
+                                              "type": "BlockStatement",
+                                              "body": [
+                                                {
+                                                  "type": "ExpressionStatement",
+                                                  "expression": {
+                                                    "type": "AssignmentExpression",
+                                                    "operator": "=",
+                                                    "left": {
+                                                      "type": "MemberExpression",
+                                                      "computed": true,
+                                                      "object": {
+                                                        "type": "Identifier",
+                                                        "name": "menuMap"
+                                                      },
+                                                      "property": {
+                                                        "type": "MemberExpression",
+                                                        "computed": false,
+                                                        "object": {
+                                                          "type": "Identifier",
+                                                          "name": "menu"
+                                                        },
+                                                        "property": {
+                                                          "type": "Identifier",
+                                                          "name": "key"
+                                                        }
+                                                      }
+                                                    },
+                                                    "right": {
+                                                      "type": "Identifier",
+                                                      "name": "menu"
+                                                    }
+                                                  }
+                                                },
+                                                {
+                                                  "type": "ExpressionStatement",
+                                                  "expression": {
+                                                    "type": "CallExpression",
+                                                    "callee": {
+                                                      "type": "MemberExpression",
+                                                      "computed": false,
+                                                      "object": {
+                                                        "type": "Identifier",
+                                                        "name": "angular"
+                                                      },
+                                                      "property": {
+                                                        "type": "Identifier",
+                                                        "name": "forEach"
+                                                      }
+                                                    },
+                                                    "arguments": [
+                                                      {
+                                                        "type": "MemberExpression",
+                                                        "computed": false,
+                                                        "object": {
+                                                          "type": "Identifier",
+                                                          "name": "menu"
+                                                        },
+                                                        "property": {
+                                                          "type": "Identifier",
+                                                          "name": "subMenuList"
+                                                        }
+                                                      },
+                                                      {
+                                                        "type": "FunctionExpression",
+                                                        "id": null,
+                                                        "params": [
+                                                          {
+                                                            "type": "Identifier",
+                                                            "name": "subMenu"
+                                                          },
+                                                          {
+                                                            "type": "Identifier",
+                                                            "name": "key"
+                                                          }
+                                                        ],
+                                                        "defaults": [],
+                                                        "body": {
+                                                          "type": "BlockStatement",
+                                                          "body": [
+                                                            {
+                                                              "type": "ExpressionStatement",
+                                                              "expression": {
+                                                                "type": "AssignmentExpression",
+                                                                "operator": "=",
+                                                                "left": {
+                                                                  "type": "MemberExpression",
+                                                                  "computed": true,
+                                                                  "object": {
+                                                                    "type": "Identifier",
+                                                                    "name": "menuMap"
+                                                                  },
+                                                                  "property": {
+                                                                    "type": "MemberExpression",
+                                                                    "computed": false,
+                                                                    "object": {
+                                                                      "type": "Identifier",
+                                                                      "name": "subMenu"
+                                                                    },
+                                                                    "property": {
+                                                                      "type": "Identifier",
+                                                                      "name": "key"
+                                                                    }
+                                                                  }
+                                                                },
+                                                                "right": {
+                                                                  "type": "Identifier",
+                                                                  "name": "subMenu"
+                                                                }
+                                                              }
+                                                            }
+                                                          ]
+                                                        },
+                                                        "generator": false,
+                                                        "expression": false
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              ]
+                                            },
+                                            "generator": false,
+                                            "expression": false
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                },
+                                "alternate": null
+                              },
+                              {
+                                "type": "ReturnStatement",
+                                "argument": {
+                                  "type": "Identifier",
+                                  "name": "menuMap"
+                                }
+                              }
+                            ]
+                          },
+                          "generator": false,
+                          "expression": false
+                        }
+                      }
+                    },
+                    {
+                      "type": "ExpressionStatement",
+                      "expression": {
+                        "type": "AssignmentExpression",
+                        "operator": "=",
+                        "left": {
+                          "type": "MemberExpression",
+                          "computed": false,
+                          "object": {
+                            "type": "Identifier",
+                            "name": "service"
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "isSampleLoaded"
+                          }
+                        },
+                        "right": {
+                          "type": "FunctionExpression",
+                          "id": null,
+                          "params": [],
+                          "defaults": [],
+                          "body": {
+                            "type": "BlockStatement",
+                            "body": [
+                              {
+                                "type": "VariableDeclaration",
+                                "declarations": [
+                                  {
+                                    "type": "VariableDeclarator",
+                                    "id": {
+                                      "type": "Identifier",
+                                      "name": "appConfig"
+                                    },
+                                    "init": {
+                                      "type": "LogicalExpression",
+                                      "operator": "||",
+                                      "left": {
+                                        "type": "MemberExpression",
+                                        "computed": false,
+                                        "object": {
+                                          "type": "Identifier",
+                                          "name": "Sample"
+                                        },
+                                        "property": {
+                                          "type": "Identifier",
+                                          "name": "appConfig"
+                                        }
+                                      },
+                                      "right": {
+                                        "type": "CallExpression",
+                                        "callee": {
+                                          "type": "MemberExpression",
+                                          "computed": false,
+                                          "object": {
+                                            "type": "Identifier",
+                                            "name": "SessionUtil"
+                                          },
+                                          "property": {
+                                            "type": "Identifier",
+                                            "name": "loadFromSessionStorage"
+                                          }
+                                        },
+                                        "arguments": [
+                                          {
+                                            "type": "MemberExpression",
+                                            "computed": false,
+                                            "object": {
+                                              "type": "Identifier",
+                                              "name": "Application"
+                                            },
+                                            "property": {
+                                              "type": "Identifier",
+                                              "name": "appConfig"
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  }
+                                ],
+                                "kind": "var"
+                              },
+                              {
+                                "type": "ReturnStatement",
+                                "argument": {
+                                  "type": "CallExpression",
+                                  "callee": {
+                                    "type": "MemberExpression",
+                                    "computed": false,
+                                    "object": {
+                                      "type": "Identifier",
+                                      "name": "StringUtil"
+                                    },
+                                    "property": {
+                                      "type": "Identifier",
+                                      "name": "validObject"
+                                    }
+                                  },
+                                  "arguments": [
+                                    {
+                                      "type": "Identifier",
+                                      "name": "appConfig"
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          },
+                          "generator": false,
+                          "expression": false
+                        }
+                      }
+                    }
+                  ]
+                },
+                "generator": false,
+                "expression": false
+              }
+            ]
+          },
+          "generator": false,
+          "expression": false
+        },
+        "arguments": []
+      }
+    }
+  ],
+  "sourceType": "script"
+}

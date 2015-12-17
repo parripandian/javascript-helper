@@ -1,0 +1,2481 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExpressionStatement",
+      "expression": {
+        "type": "CallExpression",
+        "callee": {
+          "type": "FunctionExpression",
+          "id": null,
+          "params": [],
+          "defaults": [],
+          "body": {
+            "type": "BlockStatement",
+            "body": [
+              {
+                "type": "ExpressionStatement",
+                "expression": {
+                  "type": "Literal",
+                  "value": "use strict",
+                  "raw": "'use strict'"
+                }
+              },
+              {
+                "type": "ExpressionStatement",
+                "expression": {
+                  "type": "CallExpression",
+                  "callee": {
+                    "type": "MemberExpression",
+                    "computed": false,
+                    "object": {
+                      "type": "CallExpression",
+                      "callee": {
+                        "type": "MemberExpression",
+                        "computed": false,
+                        "object": {
+                          "type": "Identifier",
+                          "name": "angular"
+                        },
+                        "property": {
+                          "type": "Identifier",
+                          "name": "module"
+                        }
+                      },
+                      "arguments": [
+                        {
+                          "type": "Literal",
+                          "value": "module.sample",
+                          "raw": "'module.sample'"
+                        }
+                      ]
+                    },
+                    "property": {
+                      "type": "Identifier",
+                      "name": "controller"
+                    }
+                  },
+                  "arguments": [
+                    {
+                      "type": "Literal",
+                      "value": "SampleController",
+                      "raw": "'SampleController'"
+                    },
+                    {
+                      "type": "Identifier",
+                      "name": "SampleController"
+                    }
+                  ]
+                }
+              },
+              {
+                "type": "ExpressionStatement",
+                "expression": {
+                  "type": "AssignmentExpression",
+                  "operator": "=",
+                  "left": {
+                    "type": "MemberExpression",
+                    "computed": false,
+                    "object": {
+                      "type": "Identifier",
+                      "name": "SampleController"
+                    },
+                    "property": {
+                      "type": "Identifier",
+                      "name": "$inject"
+                    }
+                  },
+                  "right": {
+                    "type": "ArrayExpression",
+                    "elements": [
+                      {
+                        "type": "Literal",
+                        "value": "$rootScope",
+                        "raw": "\"$rootScope\""
+                      },
+                      {
+                        "type": "Literal",
+                        "value": "$scope",
+                        "raw": "\"$scope\""
+                      },
+                      {
+                        "type": "Literal",
+                        "value": "SampleService",
+                        "raw": "\"SampleService\""
+                      },
+                      {
+                        "type": "Literal",
+                        "value": "MessageFactory",
+                        "raw": "\"MessageFactory\""
+                      },
+                      {
+                        "type": "Literal",
+                        "value": "SampleModel",
+                        "raw": "\"SampleModel\""
+                      },
+                      {
+                        "type": "Literal",
+                        "value": "$translate",
+                        "raw": "\"$translate\""
+                      },
+                      {
+                        "type": "Literal",
+                        "value": "DTOptionsBuilder",
+                        "raw": "\"DTOptionsBuilder\""
+                      },
+                      {
+                        "type": "Literal",
+                        "value": "SampleFactory",
+                        "raw": "\"SampleFactory\""
+                      },
+                      {
+                        "type": "Literal",
+                        "value": "SampleConstant",
+                        "raw": "\"SampleConstant\""
+                      },
+                      {
+                        "type": "Literal",
+                        "value": "MergedTableFormatterService",
+                        "raw": "\"MergedTableFormatterService\""
+                      },
+                      {
+                        "type": "Literal",
+                        "value": "$filter",
+                        "raw": "\"$filter\""
+                      },
+                      {
+                        "type": "Literal",
+                        "value": "ManifestFactory",
+                        "raw": "\"ManifestFactory\""
+                      },
+                      {
+                        "type": "Literal",
+                        "value": "ManifestService",
+                        "raw": "\"ManifestService\""
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "type": "FunctionDeclaration",
+                "id": {
+                  "type": "Identifier",
+                  "name": "SampleController"
+                },
+                "params": [
+                  {
+                    "type": "Identifier",
+                    "name": "$rootScope"
+                  },
+                  {
+                    "type": "Identifier",
+                    "name": "$scope"
+                  },
+                  {
+                    "type": "Identifier",
+                    "name": "SampleService"
+                  },
+                  {
+                    "type": "Identifier",
+                    "name": "MessageFactory"
+                  },
+                  {
+                    "type": "Identifier",
+                    "name": "SampleModel"
+                  },
+                  {
+                    "type": "Identifier",
+                    "name": "$translate"
+                  },
+                  {
+                    "type": "Identifier",
+                    "name": "DTOptionsBuilder"
+                  },
+                  {
+                    "type": "Identifier",
+                    "name": "SampleFactory"
+                  },
+                  {
+                    "type": "Identifier",
+                    "name": "SampleConstant"
+                  },
+                  {
+                    "type": "Identifier",
+                    "name": "MergedTableFormatterService"
+                  },
+                  {
+                    "type": "Identifier",
+                    "name": "$filter"
+                  },
+                  {
+                    "type": "Identifier",
+                    "name": "ManifestFactory"
+                  },
+                  {
+                    "type": "Identifier",
+                    "name": "ManifestService"
+                  }
+                ],
+                "defaults": [],
+                "body": {
+                  "type": "BlockStatement",
+                  "body": [
+                    {
+                      "type": "ExpressionStatement",
+                      "expression": {
+                        "type": "CallExpression",
+                        "callee": {
+                          "type": "Identifier",
+                          "name": "init"
+                        },
+                        "arguments": []
+                      }
+                    },
+                    {
+                      "type": "FunctionDeclaration",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "init"
+                      },
+                      "params": [],
+                      "defaults": [],
+                      "body": {
+                        "type": "BlockStatement",
+                        "body": [
+                          {
+                            "type": "ExpressionStatement",
+                            "expression": {
+                              "type": "CallExpression",
+                              "callee": {
+                                "type": "Identifier",
+                                "name": "initRootScopeVariables"
+                              },
+                              "arguments": []
+                            }
+                          },
+                          {
+                            "type": "ExpressionStatement",
+                            "expression": {
+                              "type": "CallExpression",
+                              "callee": {
+                                "type": "Identifier",
+                                "name": "initScopeVariables"
+                              },
+                              "arguments": []
+                            }
+                          },
+                          {
+                            "type": "ExpressionStatement",
+                            "expression": {
+                              "type": "CallExpression",
+                              "callee": {
+                                "type": "Identifier",
+                                "name": "getSample"
+                              },
+                              "arguments": []
+                            }
+                          },
+                          {
+                            "type": "ExpressionStatement",
+                            "expression": {
+                              "type": "CallExpression",
+                              "callee": {
+                                "type": "Identifier",
+                                "name": "checkAllServices"
+                              },
+                              "arguments": []
+                            }
+                          }
+                        ]
+                      },
+                      "generator": false,
+                      "expression": false
+                    },
+                    {
+                      "type": "FunctionDeclaration",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "initRootScopeVariables"
+                      },
+                      "params": [],
+                      "defaults": [],
+                      "body": {
+                        "type": "BlockStatement",
+                        "body": [
+                          {
+                            "type": "ExpressionStatement",
+                            "expression": {
+                              "type": "AssignmentExpression",
+                              "operator": "=",
+                              "left": {
+                                "type": "MemberExpression",
+                                "computed": false,
+                                "object": {
+                                  "type": "Identifier",
+                                  "name": "$rootScope"
+                                },
+                                "property": {
+                                  "type": "Identifier",
+                                  "name": "moduleName"
+                                }
+                              },
+                              "right": {
+                                "type": "CallExpression",
+                                "callee": {
+                                  "type": "MemberExpression",
+                                  "computed": false,
+                                  "object": {
+                                    "type": "Identifier",
+                                    "name": "$translate"
+                                  },
+                                  "property": {
+                                    "type": "Identifier",
+                                    "name": "instant"
+                                  }
+                                },
+                                "arguments": [
+                                  {
+                                    "type": "Literal",
+                                    "value": "MODULE.APP-CONFIG.NAME",
+                                    "raw": "'MODULE.APP-CONFIG.NAME'"
+                                  }
+                                ]
+                              }
+                            }
+                          }
+                        ]
+                      },
+                      "generator": false,
+                      "expression": false
+                    },
+                    {
+                      "type": "FunctionDeclaration",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "initScopeVariables"
+                      },
+                      "params": [],
+                      "defaults": [],
+                      "body": {
+                        "type": "BlockStatement",
+                        "body": [
+                          {
+                            "type": "ExpressionStatement",
+                            "expression": {
+                              "type": "AssignmentExpression",
+                              "operator": "=",
+                              "left": {
+                                "type": "MemberExpression",
+                                "computed": false,
+                                "object": {
+                                  "type": "Identifier",
+                                  "name": "$scope"
+                                },
+                                "property": {
+                                  "type": "Identifier",
+                                  "name": "message"
+                                }
+                              },
+                              "right": {
+                                "type": "CallExpression",
+                                "callee": {
+                                  "type": "MemberExpression",
+                                  "computed": false,
+                                  "object": {
+                                    "type": "Identifier",
+                                    "name": "MessageFactory"
+                                  },
+                                  "property": {
+                                    "type": "Identifier",
+                                    "name": "newMessageModel"
+                                  }
+                                },
+                                "arguments": []
+                              }
+                            }
+                          },
+                          {
+                            "type": "ExpressionStatement",
+                            "expression": {
+                              "type": "CallExpression",
+                              "callee": {
+                                "type": "Identifier",
+                                "name": "initModels"
+                              },
+                              "arguments": []
+                            }
+                          },
+                          {
+                            "type": "ExpressionStatement",
+                            "expression": {
+                              "type": "CallExpression",
+                              "callee": {
+                                "type": "Identifier",
+                                "name": "initTables"
+                              },
+                              "arguments": []
+                            }
+                          }
+                        ]
+                      },
+                      "generator": false,
+                      "expression": false
+                    },
+                    {
+                      "type": "FunctionDeclaration",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "initModels"
+                      },
+                      "params": [],
+                      "defaults": [],
+                      "body": {
+                        "type": "BlockStatement",
+                        "body": [
+                          {
+                            "type": "ExpressionStatement",
+                            "expression": {
+                              "type": "AssignmentExpression",
+                              "operator": "=",
+                              "left": {
+                                "type": "MemberExpression",
+                                "computed": false,
+                                "object": {
+                                  "type": "Identifier",
+                                  "name": "$scope"
+                                },
+                                "property": {
+                                  "type": "Identifier",
+                                  "name": "appConfigModule"
+                                }
+                              },
+                              "right": {
+                                "type": "LogicalExpression",
+                                "operator": "||",
+                                "left": {
+                                  "type": "MemberExpression",
+                                  "computed": false,
+                                  "object": {
+                                    "type": "Identifier",
+                                    "name": "$scope"
+                                  },
+                                  "property": {
+                                    "type": "Identifier",
+                                    "name": "appConfigModule"
+                                  }
+                                },
+                                "right": {
+                                  "type": "CallExpression",
+                                  "callee": {
+                                    "type": "MemberExpression",
+                                    "computed": false,
+                                    "object": {
+                                      "type": "Identifier",
+                                      "name": "SampleModel"
+                                    },
+                                    "property": {
+                                      "type": "Identifier",
+                                      "name": "newSampleModuleModel"
+                                    }
+                                  },
+                                  "arguments": []
+                                }
+                              }
+                            }
+                          }
+                        ]
+                      },
+                      "generator": false,
+                      "expression": false
+                    },
+                    {
+                      "type": "FunctionDeclaration",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "initTables"
+                      },
+                      "params": [],
+                      "defaults": [],
+                      "body": {
+                        "type": "BlockStatement",
+                        "body": [
+                          {
+                            "type": "ExpressionStatement",
+                            "expression": {
+                              "type": "AssignmentExpression",
+                              "operator": "=",
+                              "left": {
+                                "type": "MemberExpression",
+                                "computed": false,
+                                "object": {
+                                  "type": "Identifier",
+                                  "name": "$scope"
+                                },
+                                "property": {
+                                  "type": "Identifier",
+                                  "name": "dtOptionsServiceList"
+                                }
+                              },
+                              "right": {
+                                "type": "CallExpression",
+                                "callee": {
+                                  "type": "MemberExpression",
+                                  "computed": false,
+                                  "object": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                      "type": "MemberExpression",
+                                      "computed": false,
+                                      "object": {
+                                        "type": "CallExpression",
+                                        "callee": {
+                                          "type": "MemberExpression",
+                                          "computed": false,
+                                          "object": {
+                                            "type": "Identifier",
+                                            "name": "DTOptionsBuilder"
+                                          },
+                                          "property": {
+                                            "type": "Identifier",
+                                            "name": "newOptions"
+                                          }
+                                        },
+                                        "arguments": []
+                                      },
+                                      "property": {
+                                        "type": "Identifier",
+                                        "name": "withPaginationType"
+                                      }
+                                    },
+                                    "arguments": [
+                                      {
+                                        "type": "Literal",
+                                        "value": "full_numbers",
+                                        "raw": "'full_numbers'"
+                                      }
+                                    ]
+                                  },
+                                  "property": {
+                                    "type": "Identifier",
+                                    "name": "withBootstrap"
+                                  }
+                                },
+                                "arguments": []
+                              }
+                            }
+                          },
+                          {
+                            "type": "ExpressionStatement",
+                            "expression": {
+                              "type": "AssignmentExpression",
+                              "operator": "=",
+                              "left": {
+                                "type": "MemberExpression",
+                                "computed": false,
+                                "object": {
+                                  "type": "Identifier",
+                                  "name": "$scope"
+                                },
+                                "property": {
+                                  "type": "Identifier",
+                                  "name": "dtOptionsOtherAppList"
+                                }
+                              },
+                              "right": {
+                                "type": "CallExpression",
+                                "callee": {
+                                  "type": "MemberExpression",
+                                  "computed": false,
+                                  "object": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                      "type": "MemberExpression",
+                                      "computed": false,
+                                      "object": {
+                                        "type": "CallExpression",
+                                        "callee": {
+                                          "type": "MemberExpression",
+                                          "computed": false,
+                                          "object": {
+                                            "type": "Identifier",
+                                            "name": "DTOptionsBuilder"
+                                          },
+                                          "property": {
+                                            "type": "Identifier",
+                                            "name": "newOptions"
+                                          }
+                                        },
+                                        "arguments": []
+                                      },
+                                      "property": {
+                                        "type": "Identifier",
+                                        "name": "withPaginationType"
+                                      }
+                                    },
+                                    "arguments": [
+                                      {
+                                        "type": "Literal",
+                                        "value": "full_numbers",
+                                        "raw": "'full_numbers'"
+                                      }
+                                    ]
+                                  },
+                                  "property": {
+                                    "type": "Identifier",
+                                    "name": "withBootstrap"
+                                  }
+                                },
+                                "arguments": []
+                              }
+                            }
+                          },
+                          {
+                            "type": "ExpressionStatement",
+                            "expression": {
+                              "type": "AssignmentExpression",
+                              "operator": "=",
+                              "left": {
+                                "type": "MemberExpression",
+                                "computed": false,
+                                "object": {
+                                  "type": "Identifier",
+                                  "name": "$scope"
+                                },
+                                "property": {
+                                  "type": "Identifier",
+                                  "name": "dtOptionsMenuList"
+                                }
+                              },
+                              "right": {
+                                "type": "CallExpression",
+                                "callee": {
+                                  "type": "MemberExpression",
+                                  "computed": false,
+                                  "object": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                      "type": "MemberExpression",
+                                      "computed": false,
+                                      "object": {
+                                        "type": "CallExpression",
+                                        "callee": {
+                                          "type": "MemberExpression",
+                                          "computed": false,
+                                          "object": {
+                                            "type": "Identifier",
+                                            "name": "DTOptionsBuilder"
+                                          },
+                                          "property": {
+                                            "type": "Identifier",
+                                            "name": "newOptions"
+                                          }
+                                        },
+                                        "arguments": []
+                                      },
+                                      "property": {
+                                        "type": "Identifier",
+                                        "name": "withPaginationType"
+                                      }
+                                    },
+                                    "arguments": [
+                                      {
+                                        "type": "Literal",
+                                        "value": "full_numbers",
+                                        "raw": "'full_numbers'"
+                                      }
+                                    ]
+                                  },
+                                  "property": {
+                                    "type": "Identifier",
+                                    "name": "withBootstrap"
+                                  }
+                                },
+                                "arguments": []
+                              }
+                            }
+                          }
+                        ]
+                      },
+                      "generator": false,
+                      "expression": false
+                    },
+                    {
+                      "type": "FunctionDeclaration",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "getSample"
+                      },
+                      "params": [],
+                      "defaults": [],
+                      "body": {
+                        "type": "BlockStatement",
+                        "body": [
+                          {
+                            "type": "ExpressionStatement",
+                            "expression": {
+                              "type": "AssignmentExpression",
+                              "operator": "=",
+                              "left": {
+                                "type": "MemberExpression",
+                                "computed": false,
+                                "object": {
+                                  "type": "MemberExpression",
+                                  "computed": false,
+                                  "object": {
+                                    "type": "MemberExpression",
+                                    "computed": false,
+                                    "object": {
+                                      "type": "Identifier",
+                                      "name": "$scope"
+                                    },
+                                    "property": {
+                                      "type": "Identifier",
+                                      "name": "appConfigModule"
+                                    }
+                                  },
+                                  "property": {
+                                    "type": "Identifier",
+                                    "name": "model"
+                                  }
+                                },
+                                "property": {
+                                  "type": "Identifier",
+                                  "name": "serviceList"
+                                }
+                              },
+                              "right": {
+                                "type": "CallExpression",
+                                "callee": {
+                                  "type": "MemberExpression",
+                                  "computed": false,
+                                  "object": {
+                                    "type": "Identifier",
+                                    "name": "SampleService"
+                                  },
+                                  "property": {
+                                    "type": "Identifier",
+                                    "name": "getServiceList"
+                                  }
+                                },
+                                "arguments": []
+                              }
+                            }
+                          },
+                          {
+                            "type": "ExpressionStatement",
+                            "expression": {
+                              "type": "AssignmentExpression",
+                              "operator": "=",
+                              "left": {
+                                "type": "MemberExpression",
+                                "computed": false,
+                                "object": {
+                                  "type": "MemberExpression",
+                                  "computed": false,
+                                  "object": {
+                                    "type": "MemberExpression",
+                                    "computed": false,
+                                    "object": {
+                                      "type": "Identifier",
+                                      "name": "$scope"
+                                    },
+                                    "property": {
+                                      "type": "Identifier",
+                                      "name": "appConfigModule"
+                                    }
+                                  },
+                                  "property": {
+                                    "type": "Identifier",
+                                    "name": "model"
+                                  }
+                                },
+                                "property": {
+                                  "type": "Identifier",
+                                  "name": "otherAppList"
+                                }
+                              },
+                              "right": {
+                                "type": "CallExpression",
+                                "callee": {
+                                  "type": "MemberExpression",
+                                  "computed": false,
+                                  "object": {
+                                    "type": "Identifier",
+                                    "name": "SampleService"
+                                  },
+                                  "property": {
+                                    "type": "Identifier",
+                                    "name": "getOtherAppList"
+                                  }
+                                },
+                                "arguments": []
+                              }
+                            }
+                          },
+                          {
+                            "type": "ExpressionStatement",
+                            "expression": {
+                              "type": "AssignmentExpression",
+                              "operator": "=",
+                              "left": {
+                                "type": "MemberExpression",
+                                "computed": false,
+                                "object": {
+                                  "type": "MemberExpression",
+                                  "computed": false,
+                                  "object": {
+                                    "type": "MemberExpression",
+                                    "computed": false,
+                                    "object": {
+                                      "type": "Identifier",
+                                      "name": "$scope"
+                                    },
+                                    "property": {
+                                      "type": "Identifier",
+                                      "name": "appConfigModule"
+                                    }
+                                  },
+                                  "property": {
+                                    "type": "Identifier",
+                                    "name": "model"
+                                  }
+                                },
+                                "property": {
+                                  "type": "Identifier",
+                                  "name": "showOtherAppsURL"
+                                }
+                              },
+                              "right": {
+                                "type": "CallExpression",
+                                "callee": {
+                                  "type": "MemberExpression",
+                                  "computed": false,
+                                  "object": {
+                                    "type": "Identifier",
+                                    "name": "SampleService"
+                                  },
+                                  "property": {
+                                    "type": "Identifier",
+                                    "name": "getShowOtherAppsURL"
+                                  }
+                                },
+                                "arguments": []
+                              }
+                            }
+                          },
+                          {
+                            "type": "ExpressionStatement",
+                            "expression": {
+                              "type": "AssignmentExpression",
+                              "operator": "=",
+                              "left": {
+                                "type": "MemberExpression",
+                                "computed": false,
+                                "object": {
+                                  "type": "MemberExpression",
+                                  "computed": false,
+                                  "object": {
+                                    "type": "MemberExpression",
+                                    "computed": false,
+                                    "object": {
+                                      "type": "Identifier",
+                                      "name": "$scope"
+                                    },
+                                    "property": {
+                                      "type": "Identifier",
+                                      "name": "appConfigModule"
+                                    }
+                                  },
+                                  "property": {
+                                    "type": "Identifier",
+                                    "name": "model"
+                                  }
+                                },
+                                "property": {
+                                  "type": "Identifier",
+                                  "name": "menuList"
+                                }
+                              },
+                              "right": {
+                                "type": "CallExpression",
+                                "callee": {
+                                  "type": "MemberExpression",
+                                  "computed": false,
+                                  "object": {
+                                    "type": "Identifier",
+                                    "name": "SampleService"
+                                  },
+                                  "property": {
+                                    "type": "Identifier",
+                                    "name": "getMenuList"
+                                  }
+                                },
+                                "arguments": []
+                              }
+                            }
+                          },
+                          {
+                            "type": "ExpressionStatement",
+                            "expression": {
+                              "type": "AssignmentExpression",
+                              "operator": "=",
+                              "left": {
+                                "type": "MemberExpression",
+                                "computed": false,
+                                "object": {
+                                  "type": "MemberExpression",
+                                  "computed": false,
+                                  "object": {
+                                    "type": "MemberExpression",
+                                    "computed": false,
+                                    "object": {
+                                      "type": "Identifier",
+                                      "name": "$scope"
+                                    },
+                                    "property": {
+                                      "type": "Identifier",
+                                      "name": "appConfigModule"
+                                    }
+                                  },
+                                  "property": {
+                                    "type": "Identifier",
+                                    "name": "model"
+                                  }
+                                },
+                                "property": {
+                                  "type": "Identifier",
+                                  "name": "menuMap"
+                                }
+                              },
+                              "right": {
+                                "type": "CallExpression",
+                                "callee": {
+                                  "type": "MemberExpression",
+                                  "computed": false,
+                                  "object": {
+                                    "type": "Identifier",
+                                    "name": "SampleService"
+                                  },
+                                  "property": {
+                                    "type": "Identifier",
+                                    "name": "getMenuMap"
+                                  }
+                                },
+                                "arguments": []
+                              }
+                            }
+                          },
+                          {
+                            "type": "ExpressionStatement",
+                            "expression": {
+                              "type": "AssignmentExpression",
+                              "operator": "=",
+                              "left": {
+                                "type": "MemberExpression",
+                                "computed": false,
+                                "object": {
+                                  "type": "MemberExpression",
+                                  "computed": false,
+                                  "object": {
+                                    "type": "MemberExpression",
+                                    "computed": false,
+                                    "object": {
+                                      "type": "Identifier",
+                                      "name": "$scope"
+                                    },
+                                    "property": {
+                                      "type": "Identifier",
+                                      "name": "appConfigModule"
+                                    }
+                                  },
+                                  "property": {
+                                    "type": "Identifier",
+                                    "name": "model"
+                                  }
+                                },
+                                "property": {
+                                  "type": "Identifier",
+                                  "name": "menuTableContent"
+                                }
+                              },
+                              "right": {
+                                "type": "CallExpression",
+                                "callee": {
+                                  "type": "Identifier",
+                                  "name": "prepareMenuContent"
+                                },
+                                "arguments": [
+                                  {
+                                    "type": "MemberExpression",
+                                    "computed": false,
+                                    "object": {
+                                      "type": "MemberExpression",
+                                      "computed": false,
+                                      "object": {
+                                        "type": "MemberExpression",
+                                        "computed": false,
+                                        "object": {
+                                          "type": "Identifier",
+                                          "name": "$scope"
+                                        },
+                                        "property": {
+                                          "type": "Identifier",
+                                          "name": "appConfigModule"
+                                        }
+                                      },
+                                      "property": {
+                                        "type": "Identifier",
+                                        "name": "model"
+                                      }
+                                    },
+                                    "property": {
+                                      "type": "Identifier",
+                                      "name": "menuList"
+                                    }
+                                  }
+                                ]
+                              }
+                            }
+                          }
+                        ]
+                      },
+                      "generator": false,
+                      "expression": false
+                    },
+                    {
+                      "type": "FunctionDeclaration",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "checkAllServices"
+                      },
+                      "params": [],
+                      "defaults": [],
+                      "body": {
+                        "type": "BlockStatement",
+                        "body": [
+                          {
+                            "type": "ExpressionStatement",
+                            "expression": {
+                              "type": "CallExpression",
+                              "callee": {
+                                "type": "MemberExpression",
+                                "computed": false,
+                                "object": {
+                                  "type": "Identifier",
+                                  "name": "angular"
+                                },
+                                "property": {
+                                  "type": "Identifier",
+                                  "name": "forEach"
+                                }
+                              },
+                              "arguments": [
+                                {
+                                  "type": "MemberExpression",
+                                  "computed": false,
+                                  "object": {
+                                    "type": "MemberExpression",
+                                    "computed": false,
+                                    "object": {
+                                      "type": "MemberExpression",
+                                      "computed": false,
+                                      "object": {
+                                        "type": "Identifier",
+                                        "name": "$scope"
+                                      },
+                                      "property": {
+                                        "type": "Identifier",
+                                        "name": "appConfigModule"
+                                      }
+                                    },
+                                    "property": {
+                                      "type": "Identifier",
+                                      "name": "model"
+                                    }
+                                  },
+                                  "property": {
+                                    "type": "Identifier",
+                                    "name": "serviceList"
+                                  }
+                                },
+                                {
+                                  "type": "FunctionExpression",
+                                  "id": null,
+                                  "params": [
+                                    {
+                                      "type": "Identifier",
+                                      "name": "service"
+                                    },
+                                    {
+                                      "type": "Identifier",
+                                      "name": "key"
+                                    }
+                                  ],
+                                  "defaults": [],
+                                  "body": {
+                                    "type": "BlockStatement",
+                                    "body": [
+                                      {
+                                        "type": "ExpressionStatement",
+                                        "expression": {
+                                          "type": "CallExpression",
+                                          "callee": {
+                                            "type": "Identifier",
+                                            "name": "checkService"
+                                          },
+                                          "arguments": [
+                                            {
+                                              "type": "Identifier",
+                                              "name": "service"
+                                            }
+                                          ]
+                                        }
+                                      }
+                                    ]
+                                  },
+                                  "generator": false,
+                                  "expression": false
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      },
+                      "generator": false,
+                      "expression": false
+                    },
+                    {
+                      "type": "FunctionDeclaration",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "checkService"
+                      },
+                      "params": [
+                        {
+                          "type": "Identifier",
+                          "name": "service"
+                        }
+                      ],
+                      "defaults": [],
+                      "body": {
+                        "type": "BlockStatement",
+                        "body": [
+                          {
+                            "type": "ExpressionStatement",
+                            "expression": {
+                              "type": "CallExpression",
+                              "callee": {
+                                "type": "MemberExpression",
+                                "computed": false,
+                                "object": {
+                                  "type": "CallExpression",
+                                  "callee": {
+                                    "type": "MemberExpression",
+                                    "computed": false,
+                                    "object": {
+                                      "type": "Identifier",
+                                      "name": "SampleFactory"
+                                    },
+                                    "property": {
+                                      "type": "Identifier",
+                                      "name": "checkService"
+                                    }
+                                  },
+                                  "arguments": [
+                                    {
+                                      "type": "MemberExpression",
+                                      "computed": false,
+                                      "object": {
+                                        "type": "Identifier",
+                                        "name": "service"
+                                      },
+                                      "property": {
+                                        "type": "Identifier",
+                                        "name": "healthurl"
+                                      }
+                                    }
+                                  ]
+                                },
+                                "property": {
+                                  "type": "Identifier",
+                                  "name": "then"
+                                }
+                              },
+                              "arguments": [
+                                {
+                                  "type": "FunctionExpression",
+                                  "id": null,
+                                  "params": [
+                                    {
+                                      "type": "Identifier",
+                                      "name": "response"
+                                    }
+                                  ],
+                                  "defaults": [],
+                                  "body": {
+                                    "type": "BlockStatement",
+                                    "body": [
+                                      {
+                                        "type": "ExpressionStatement",
+                                        "expression": {
+                                          "type": "AssignmentExpression",
+                                          "operator": "=",
+                                          "left": {
+                                            "type": "MemberExpression",
+                                            "computed": false,
+                                            "object": {
+                                              "type": "Identifier",
+                                              "name": "service"
+                                            },
+                                            "property": {
+                                              "type": "Identifier",
+                                              "name": "buildInfo"
+                                            }
+                                          },
+                                          "right": {
+                                            "type": "Identifier",
+                                            "name": "response"
+                                          }
+                                        }
+                                      },
+                                      {
+                                        "type": "ExpressionStatement",
+                                        "expression": {
+                                          "type": "AssignmentExpression",
+                                          "operator": "=",
+                                          "left": {
+                                            "type": "MemberExpression",
+                                            "computed": false,
+                                            "object": {
+                                              "type": "Identifier",
+                                              "name": "service"
+                                            },
+                                            "property": {
+                                              "type": "Identifier",
+                                              "name": "running"
+                                            }
+                                          },
+                                          "right": {
+                                            "type": "Literal",
+                                            "value": true,
+                                            "raw": "true"
+                                          }
+                                        }
+                                      },
+                                      {
+                                        "type": "ExpressionStatement",
+                                        "expression": {
+                                          "type": "AssignmentExpression",
+                                          "operator": "=",
+                                          "left": {
+                                            "type": "MemberExpression",
+                                            "computed": false,
+                                            "object": {
+                                              "type": "Identifier",
+                                              "name": "service"
+                                            },
+                                            "property": {
+                                              "type": "Identifier",
+                                              "name": "status"
+                                            }
+                                          },
+                                          "right": {
+                                            "type": "MemberExpression",
+                                            "computed": false,
+                                            "object": {
+                                              "type": "Identifier",
+                                              "name": "SampleConstant"
+                                            },
+                                            "property": {
+                                              "type": "Identifier",
+                                              "name": "SERVICE_STATUS_UP"
+                                            }
+                                          }
+                                        }
+                                      }
+                                    ]
+                                  },
+                                  "generator": false,
+                                  "expression": false
+                                },
+                                {
+                                  "type": "FunctionExpression",
+                                  "id": null,
+                                  "params": [
+                                    {
+                                      "type": "Identifier",
+                                      "name": "response"
+                                    }
+                                  ],
+                                  "defaults": [],
+                                  "body": {
+                                    "type": "BlockStatement",
+                                    "body": [
+                                      {
+                                        "type": "ExpressionStatement",
+                                        "expression": {
+                                          "type": "AssignmentExpression",
+                                          "operator": "=",
+                                          "left": {
+                                            "type": "MemberExpression",
+                                            "computed": false,
+                                            "object": {
+                                              "type": "Identifier",
+                                              "name": "service"
+                                            },
+                                            "property": {
+                                              "type": "Identifier",
+                                              "name": "buildInfo"
+                                            }
+                                          },
+                                          "right": {
+                                            "type": "ObjectExpression",
+                                            "properties": []
+                                          }
+                                        }
+                                      },
+                                      {
+                                        "type": "ExpressionStatement",
+                                        "expression": {
+                                          "type": "AssignmentExpression",
+                                          "operator": "=",
+                                          "left": {
+                                            "type": "MemberExpression",
+                                            "computed": false,
+                                            "object": {
+                                              "type": "Identifier",
+                                              "name": "service"
+                                            },
+                                            "property": {
+                                              "type": "Identifier",
+                                              "name": "running"
+                                            }
+                                          },
+                                          "right": {
+                                            "type": "Literal",
+                                            "value": false,
+                                            "raw": "false"
+                                          }
+                                        }
+                                      },
+                                      {
+                                        "type": "ExpressionStatement",
+                                        "expression": {
+                                          "type": "AssignmentExpression",
+                                          "operator": "=",
+                                          "left": {
+                                            "type": "MemberExpression",
+                                            "computed": false,
+                                            "object": {
+                                              "type": "Identifier",
+                                              "name": "service"
+                                            },
+                                            "property": {
+                                              "type": "Identifier",
+                                              "name": "status"
+                                            }
+                                          },
+                                          "right": {
+                                            "type": "MemberExpression",
+                                            "computed": false,
+                                            "object": {
+                                              "type": "Identifier",
+                                              "name": "SampleConstant"
+                                            },
+                                            "property": {
+                                              "type": "Identifier",
+                                              "name": "SERVICE_STATUS_DOWN"
+                                            }
+                                          }
+                                        }
+                                      }
+                                    ]
+                                  },
+                                  "generator": false,
+                                  "expression": false
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      },
+                      "generator": false,
+                      "expression": false
+                    },
+                    {
+                      "type": "ExpressionStatement",
+                      "expression": {
+                        "type": "AssignmentExpression",
+                        "operator": "=",
+                        "left": {
+                          "type": "MemberExpression",
+                          "computed": false,
+                          "object": {
+                            "type": "Identifier",
+                            "name": "$scope"
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "showMoreFields"
+                          }
+                        },
+                        "right": {
+                          "type": "FunctionExpression",
+                          "id": null,
+                          "params": [],
+                          "defaults": [],
+                          "body": {
+                            "type": "BlockStatement",
+                            "body": [
+                              {
+                                "type": "ExpressionStatement",
+                                "expression": {
+                                  "type": "AssignmentExpression",
+                                  "operator": "=",
+                                  "left": {
+                                    "type": "MemberExpression",
+                                    "computed": false,
+                                    "object": {
+                                      "type": "Identifier",
+                                      "name": "$scope"
+                                    },
+                                    "property": {
+                                      "type": "Identifier",
+                                      "name": "showMore"
+                                    }
+                                  },
+                                  "right": {
+                                    "type": "Literal",
+                                    "value": true,
+                                    "raw": "true"
+                                  }
+                                }
+                              }
+                            ]
+                          },
+                          "generator": false,
+                          "expression": false
+                        }
+                      }
+                    },
+                    {
+                      "type": "ExpressionStatement",
+                      "expression": {
+                        "type": "AssignmentExpression",
+                        "operator": "=",
+                        "left": {
+                          "type": "MemberExpression",
+                          "computed": false,
+                          "object": {
+                            "type": "Identifier",
+                            "name": "$scope"
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "showLessFields"
+                          }
+                        },
+                        "right": {
+                          "type": "FunctionExpression",
+                          "id": null,
+                          "params": [],
+                          "defaults": [],
+                          "body": {
+                            "type": "BlockStatement",
+                            "body": [
+                              {
+                                "type": "ExpressionStatement",
+                                "expression": {
+                                  "type": "AssignmentExpression",
+                                  "operator": "=",
+                                  "left": {
+                                    "type": "MemberExpression",
+                                    "computed": false,
+                                    "object": {
+                                      "type": "Identifier",
+                                      "name": "$scope"
+                                    },
+                                    "property": {
+                                      "type": "Identifier",
+                                      "name": "showMore"
+                                    }
+                                  },
+                                  "right": {
+                                    "type": "Literal",
+                                    "value": false,
+                                    "raw": "false"
+                                  }
+                                }
+                              }
+                            ]
+                          },
+                          "generator": false,
+                          "expression": false
+                        }
+                      }
+                    },
+                    {
+                      "type": "ExpressionStatement",
+                      "expression": {
+                        "type": "AssignmentExpression",
+                        "operator": "=",
+                        "left": {
+                          "type": "MemberExpression",
+                          "computed": false,
+                          "object": {
+                            "type": "Identifier",
+                            "name": "$scope"
+                          },
+                          "property": {
+                            "type": "Identifier",
+                            "name": "checkService"
+                          }
+                        },
+                        "right": {
+                          "type": "FunctionExpression",
+                          "id": null,
+                          "params": [
+                            {
+                              "type": "Identifier",
+                              "name": "service"
+                            }
+                          ],
+                          "defaults": [],
+                          "body": {
+                            "type": "BlockStatement",
+                            "body": [
+                              {
+                                "type": "ExpressionStatement",
+                                "expression": {
+                                  "type": "CallExpression",
+                                  "callee": {
+                                    "type": "Identifier",
+                                    "name": "checkService"
+                                  },
+                                  "arguments": [
+                                    {
+                                      "type": "Identifier",
+                                      "name": "service"
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          },
+                          "generator": false,
+                          "expression": false
+                        }
+                      }
+                    },
+                    {
+                      "type": "FunctionDeclaration",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "prepareMenuContent"
+                      },
+                      "params": [
+                        {
+                          "type": "Identifier",
+                          "name": "menuList"
+                        }
+                      ],
+                      "defaults": [],
+                      "body": {
+                        "type": "BlockStatement",
+                        "body": [
+                          {
+                            "type": "VariableDeclaration",
+                            "declarations": [
+                              {
+                                "type": "VariableDeclarator",
+                                "id": {
+                                  "type": "Identifier",
+                                  "name": "tableHeaderList"
+                                },
+                                "init": {
+                                  "type": "ArrayExpression",
+                                  "elements": [
+                                    {
+                                      "type": "Literal",
+                                      "value": "Menu",
+                                      "raw": "'Menu'"
+                                    },
+                                    {
+                                      "type": "Literal",
+                                      "value": "Name",
+                                      "raw": "'Name'"
+                                    },
+                                    {
+                                      "type": "Literal",
+                                      "value": "Type",
+                                      "raw": "'Type'"
+                                    },
+                                    {
+                                      "type": "Literal",
+                                      "value": "Key",
+                                      "raw": "'Key'"
+                                    },
+                                    {
+                                      "type": "Literal",
+                                      "value": "Href",
+                                      "raw": "'Href'"
+                                    },
+                                    {
+                                      "type": "Literal",
+                                      "value": "Disable",
+                                      "raw": "'Disable'"
+                                    },
+                                    {
+                                      "type": "Literal",
+                                      "value": "Display Order",
+                                      "raw": "'Display Order'"
+                                    },
+                                    {
+                                      "type": "Literal",
+                                      "value": "Placement",
+                                      "raw": "'Placement'"
+                                    }
+                                  ]
+                                }
+                              }
+                            ],
+                            "kind": "var"
+                          },
+                          {
+                            "type": "VariableDeclaration",
+                            "declarations": [
+                              {
+                                "type": "VariableDeclarator",
+                                "id": {
+                                  "type": "Identifier",
+                                  "name": "tableRowList"
+                                },
+                                "init": {
+                                  "type": "ArrayExpression",
+                                  "elements": []
+                                }
+                              }
+                            ],
+                            "kind": "var"
+                          },
+                          {
+                            "type": "VariableDeclaration",
+                            "declarations": [
+                              {
+                                "type": "VariableDeclarator",
+                                "id": {
+                                  "type": "Identifier",
+                                  "name": "subMenuAttrList"
+                                },
+                                "init": {
+                                  "type": "ArrayExpression",
+                                  "elements": []
+                                }
+                              }
+                            ],
+                            "kind": "var"
+                          },
+                          {
+                            "type": "VariableDeclaration",
+                            "declarations": [
+                              {
+                                "type": "VariableDeclarator",
+                                "id": {
+                                  "type": "Identifier",
+                                  "name": "subMenuList"
+                                },
+                                "init": {
+                                  "type": "ArrayExpression",
+                                  "elements": []
+                                }
+                              }
+                            ],
+                            "kind": "var"
+                          },
+                          {
+                            "type": "VariableDeclaration",
+                            "declarations": [
+                              {
+                                "type": "VariableDeclarator",
+                                "id": {
+                                  "type": "Identifier",
+                                  "name": "rowIndex"
+                                },
+                                "init": {
+                                  "type": "Literal",
+                                  "value": 1,
+                                  "raw": "1"
+                                }
+                              }
+                            ],
+                            "kind": "var"
+                          },
+                          {
+                            "type": "ExpressionStatement",
+                            "expression": {
+                              "type": "AssignmentExpression",
+                              "operator": "=",
+                              "left": {
+                                "type": "Identifier",
+                                "name": "subMenuList"
+                              },
+                              "right": {
+                                "type": "CallExpression",
+                                "callee": {
+                                  "type": "CallExpression",
+                                  "callee": {
+                                    "type": "Identifier",
+                                    "name": "$filter"
+                                  },
+                                  "arguments": [
+                                    {
+                                      "type": "Literal",
+                                      "value": "orderBy",
+                                      "raw": "'orderBy'"
+                                    }
+                                  ]
+                                },
+                                "arguments": [
+                                  {
+                                    "type": "Identifier",
+                                    "name": "menuList"
+                                  },
+                                  {
+                                    "type": "Literal",
+                                    "value": "displayOrder",
+                                    "raw": "'displayOrder'"
+                                  }
+                                ]
+                              }
+                            }
+                          },
+                          {
+                            "type": "ExpressionStatement",
+                            "expression": {
+                              "type": "CallExpression",
+                              "callee": {
+                                "type": "MemberExpression",
+                                "computed": false,
+                                "object": {
+                                  "type": "Identifier",
+                                  "name": "angular"
+                                },
+                                "property": {
+                                  "type": "Identifier",
+                                  "name": "forEach"
+                                }
+                              },
+                              "arguments": [
+                                {
+                                  "type": "Identifier",
+                                  "name": "menuList"
+                                },
+                                {
+                                  "type": "FunctionExpression",
+                                  "id": null,
+                                  "params": [
+                                    {
+                                      "type": "Identifier",
+                                      "name": "menu"
+                                    },
+                                    {
+                                      "type": "Identifier",
+                                      "name": "key"
+                                    }
+                                  ],
+                                  "defaults": [],
+                                  "body": {
+                                    "type": "BlockStatement",
+                                    "body": [
+                                      {
+                                        "type": "ExpressionStatement",
+                                        "expression": {
+                                          "type": "AssignmentExpression",
+                                          "operator": "=",
+                                          "left": {
+                                            "type": "Identifier",
+                                            "name": "subMenuAttrList"
+                                          },
+                                          "right": {
+                                            "type": "ArrayExpression",
+                                            "elements": []
+                                          }
+                                        }
+                                      },
+                                      {
+                                        "type": "ExpressionStatement",
+                                        "expression": {
+                                          "type": "CallExpression",
+                                          "callee": {
+                                            "type": "MemberExpression",
+                                            "computed": false,
+                                            "object": {
+                                              "type": "Identifier",
+                                              "name": "subMenuAttrList"
+                                            },
+                                            "property": {
+                                              "type": "Identifier",
+                                              "name": "push"
+                                            }
+                                          },
+                                          "arguments": [
+                                            {
+                                              "type": "CallExpression",
+                                              "callee": {
+                                                "type": "Identifier",
+                                                "name": "prepareSubMenuTableRow"
+                                              },
+                                              "arguments": [
+                                                {
+                                                  "type": "Identifier",
+                                                  "name": "menu"
+                                                },
+                                                {
+                                                  "type": "Literal",
+                                                  "value": "Menu",
+                                                  "raw": "\"Menu\""
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      },
+                                      {
+                                        "type": "ExpressionStatement",
+                                        "expression": {
+                                          "type": "AssignmentExpression",
+                                          "operator": "=",
+                                          "left": {
+                                            "type": "Identifier",
+                                            "name": "subMenuList"
+                                          },
+                                          "right": {
+                                            "type": "CallExpression",
+                                            "callee": {
+                                              "type": "CallExpression",
+                                              "callee": {
+                                                "type": "Identifier",
+                                                "name": "$filter"
+                                              },
+                                              "arguments": [
+                                                {
+                                                  "type": "Literal",
+                                                  "value": "orderBy",
+                                                  "raw": "'orderBy'"
+                                                }
+                                              ]
+                                            },
+                                            "arguments": [
+                                              {
+                                                "type": "MemberExpression",
+                                                "computed": false,
+                                                "object": {
+                                                  "type": "Identifier",
+                                                  "name": "menu"
+                                                },
+                                                "property": {
+                                                  "type": "Identifier",
+                                                  "name": "subMenuList"
+                                                }
+                                              },
+                                              {
+                                                "type": "Literal",
+                                                "value": "displayOrder",
+                                                "raw": "'displayOrder'"
+                                              }
+                                            ]
+                                          }
+                                        }
+                                      },
+                                      {
+                                        "type": "ExpressionStatement",
+                                        "expression": {
+                                          "type": "CallExpression",
+                                          "callee": {
+                                            "type": "MemberExpression",
+                                            "computed": false,
+                                            "object": {
+                                              "type": "Identifier",
+                                              "name": "angular"
+                                            },
+                                            "property": {
+                                              "type": "Identifier",
+                                              "name": "forEach"
+                                            }
+                                          },
+                                          "arguments": [
+                                            {
+                                              "type": "Identifier",
+                                              "name": "subMenuList"
+                                            },
+                                            {
+                                              "type": "FunctionExpression",
+                                              "id": null,
+                                              "params": [
+                                                {
+                                                  "type": "Identifier",
+                                                  "name": "subMenu"
+                                                },
+                                                {
+                                                  "type": "Identifier",
+                                                  "name": "key"
+                                                }
+                                              ],
+                                              "defaults": [],
+                                              "body": {
+                                                "type": "BlockStatement",
+                                                "body": [
+                                                  {
+                                                    "type": "ExpressionStatement",
+                                                    "expression": {
+                                                      "type": "CallExpression",
+                                                      "callee": {
+                                                        "type": "MemberExpression",
+                                                        "computed": false,
+                                                        "object": {
+                                                          "type": "Identifier",
+                                                          "name": "subMenuAttrList"
+                                                        },
+                                                        "property": {
+                                                          "type": "Identifier",
+                                                          "name": "push"
+                                                        }
+                                                      },
+                                                      "arguments": [
+                                                        {
+                                                          "type": "CallExpression",
+                                                          "callee": {
+                                                            "type": "Identifier",
+                                                            "name": "prepareSubMenuTableRow"
+                                                          },
+                                                          "arguments": [
+                                                            {
+                                                              "type": "Identifier",
+                                                              "name": "subMenu"
+                                                            },
+                                                            {
+                                                              "type": "Literal",
+                                                              "value": "Sub Menu",
+                                                              "raw": "\"Sub Menu\""
+                                                            }
+                                                          ]
+                                                        }
+                                                      ]
+                                                    }
+                                                  }
+                                                ]
+                                              },
+                                              "generator": false,
+                                              "expression": false
+                                            }
+                                          ]
+                                        }
+                                      },
+                                      {
+                                        "type": "ExpressionStatement",
+                                        "expression": {
+                                          "type": "CallExpression",
+                                          "callee": {
+                                            "type": "MemberExpression",
+                                            "computed": false,
+                                            "object": {
+                                              "type": "Identifier",
+                                              "name": "tableRowList"
+                                            },
+                                            "property": {
+                                              "type": "Identifier",
+                                              "name": "push"
+                                            }
+                                          },
+                                          "arguments": [
+                                            {
+                                              "type": "CallExpression",
+                                              "callee": {
+                                                "type": "MemberExpression",
+                                                "computed": false,
+                                                "object": {
+                                                  "type": "Identifier",
+                                                  "name": "MergedTableFormatterService"
+                                                },
+                                                "property": {
+                                                  "type": "Identifier",
+                                                  "name": "prepareHorizontalTableRowMerged"
+                                                }
+                                              },
+                                              "arguments": [
+                                                {
+                                                  "type": "UpdateExpression",
+                                                  "operator": "++",
+                                                  "argument": {
+                                                    "type": "Identifier",
+                                                    "name": "rowIndex"
+                                                  },
+                                                  "prefix": false
+                                                },
+                                                {
+                                                  "type": "MemberExpression",
+                                                  "computed": false,
+                                                  "object": {
+                                                    "type": "Identifier",
+                                                    "name": "menu"
+                                                  },
+                                                  "property": {
+                                                    "type": "Identifier",
+                                                    "name": "name"
+                                                  }
+                                                },
+                                                {
+                                                  "type": "Literal",
+                                                  "value": "default",
+                                                  "raw": "\"default\""
+                                                },
+                                                {
+                                                  "type": "Identifier",
+                                                  "name": "subMenuAttrList"
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      }
+                                    ]
+                                  },
+                                  "generator": false,
+                                  "expression": false
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "type": "ReturnStatement",
+                            "argument": {
+                              "type": "CallExpression",
+                              "callee": {
+                                "type": "MemberExpression",
+                                "computed": false,
+                                "object": {
+                                  "type": "Identifier",
+                                  "name": "MergedTableFormatterService"
+                                },
+                                "property": {
+                                  "type": "Identifier",
+                                  "name": "formatContentForHorizontalTableMerged"
+                                }
+                              },
+                              "arguments": [
+                                {
+                                  "type": "Identifier",
+                                  "name": "tableHeaderList"
+                                },
+                                {
+                                  "type": "Identifier",
+                                  "name": "tableRowList"
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      },
+                      "generator": false,
+                      "expression": false
+                    },
+                    {
+                      "type": "FunctionDeclaration",
+                      "id": {
+                        "type": "Identifier",
+                        "name": "prepareSubMenuTableRow"
+                      },
+                      "params": [
+                        {
+                          "type": "Identifier",
+                          "name": "menu"
+                        },
+                        {
+                          "type": "Identifier",
+                          "name": "type"
+                        }
+                      ],
+                      "defaults": [],
+                      "body": {
+                        "type": "BlockStatement",
+                        "body": [
+                          {
+                            "type": "VariableDeclaration",
+                            "declarations": [
+                              {
+                                "type": "VariableDeclarator",
+                                "id": {
+                                  "type": "Identifier",
+                                  "name": "tableRow"
+                                },
+                                "init": {
+                                  "type": "ArrayExpression",
+                                  "elements": []
+                                }
+                              }
+                            ],
+                            "kind": "var"
+                          },
+                          {
+                            "type": "IfStatement",
+                            "test": {
+                              "type": "BinaryExpression",
+                              "operator": "===",
+                              "left": {
+                                "type": "Literal",
+                                "value": "Menu",
+                                "raw": "'Menu'"
+                              },
+                              "right": {
+                                "type": "Identifier",
+                                "name": "type"
+                              }
+                            },
+                            "consequent": {
+                              "type": "BlockStatement",
+                              "body": [
+                                {
+                                  "type": "ExpressionStatement",
+                                  "expression": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                      "type": "MemberExpression",
+                                      "computed": false,
+                                      "object": {
+                                        "type": "Identifier",
+                                        "name": "tableRow"
+                                      },
+                                      "property": {
+                                        "type": "Identifier",
+                                        "name": "push"
+                                      }
+                                    },
+                                    "arguments": [
+                                      {
+                                        "type": "BinaryExpression",
+                                        "operator": "+",
+                                        "left": {
+                                          "type": "BinaryExpression",
+                                          "operator": "+",
+                                          "left": {
+                                            "type": "Literal",
+                                            "value": "<b>",
+                                            "raw": "'<b>'"
+                                          },
+                                          "right": {
+                                            "type": "MemberExpression",
+                                            "computed": false,
+                                            "object": {
+                                              "type": "Identifier",
+                                              "name": "menu"
+                                            },
+                                            "property": {
+                                              "type": "Identifier",
+                                              "name": "name"
+                                            }
+                                          }
+                                        },
+                                        "right": {
+                                          "type": "Literal",
+                                          "value": "</b>",
+                                          "raw": "'</b>'"
+                                        }
+                                      }
+                                    ]
+                                  }
+                                },
+                                {
+                                  "type": "ExpressionStatement",
+                                  "expression": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                      "type": "MemberExpression",
+                                      "computed": false,
+                                      "object": {
+                                        "type": "Identifier",
+                                        "name": "tableRow"
+                                      },
+                                      "property": {
+                                        "type": "Identifier",
+                                        "name": "push"
+                                      }
+                                    },
+                                    "arguments": [
+                                      {
+                                        "type": "BinaryExpression",
+                                        "operator": "+",
+                                        "left": {
+                                          "type": "BinaryExpression",
+                                          "operator": "+",
+                                          "left": {
+                                            "type": "Literal",
+                                            "value": "<b>",
+                                            "raw": "'<b>'"
+                                          },
+                                          "right": {
+                                            "type": "Identifier",
+                                            "name": "type"
+                                          }
+                                        },
+                                        "right": {
+                                          "type": "Literal",
+                                          "value": "</b>",
+                                          "raw": "'</b>'"
+                                        }
+                                      }
+                                    ]
+                                  }
+                                }
+                              ]
+                            },
+                            "alternate": {
+                              "type": "BlockStatement",
+                              "body": [
+                                {
+                                  "type": "ExpressionStatement",
+                                  "expression": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                      "type": "MemberExpression",
+                                      "computed": false,
+                                      "object": {
+                                        "type": "Identifier",
+                                        "name": "tableRow"
+                                      },
+                                      "property": {
+                                        "type": "Identifier",
+                                        "name": "push"
+                                      }
+                                    },
+                                    "arguments": [
+                                      {
+                                        "type": "MemberExpression",
+                                        "computed": false,
+                                        "object": {
+                                          "type": "Identifier",
+                                          "name": "menu"
+                                        },
+                                        "property": {
+                                          "type": "Identifier",
+                                          "name": "name"
+                                        }
+                                      }
+                                    ]
+                                  }
+                                },
+                                {
+                                  "type": "ExpressionStatement",
+                                  "expression": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                      "type": "MemberExpression",
+                                      "computed": false,
+                                      "object": {
+                                        "type": "Identifier",
+                                        "name": "tableRow"
+                                      },
+                                      "property": {
+                                        "type": "Identifier",
+                                        "name": "push"
+                                      }
+                                    },
+                                    "arguments": [
+                                      {
+                                        "type": "Identifier",
+                                        "name": "type"
+                                      }
+                                    ]
+                                  }
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "type": "ExpressionStatement",
+                            "expression": {
+                              "type": "CallExpression",
+                              "callee": {
+                                "type": "MemberExpression",
+                                "computed": false,
+                                "object": {
+                                  "type": "Identifier",
+                                  "name": "tableRow"
+                                },
+                                "property": {
+                                  "type": "Identifier",
+                                  "name": "push"
+                                }
+                              },
+                              "arguments": [
+                                {
+                                  "type": "MemberExpression",
+                                  "computed": false,
+                                  "object": {
+                                    "type": "Identifier",
+                                    "name": "menu"
+                                  },
+                                  "property": {
+                                    "type": "Identifier",
+                                    "name": "key"
+                                  }
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "type": "ExpressionStatement",
+                            "expression": {
+                              "type": "CallExpression",
+                              "callee": {
+                                "type": "MemberExpression",
+                                "computed": false,
+                                "object": {
+                                  "type": "Identifier",
+                                  "name": "tableRow"
+                                },
+                                "property": {
+                                  "type": "Identifier",
+                                  "name": "push"
+                                }
+                              },
+                              "arguments": [
+                                {
+                                  "type": "MemberExpression",
+                                  "computed": false,
+                                  "object": {
+                                    "type": "Identifier",
+                                    "name": "menu"
+                                  },
+                                  "property": {
+                                    "type": "Identifier",
+                                    "name": "href"
+                                  }
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "type": "ExpressionStatement",
+                            "expression": {
+                              "type": "CallExpression",
+                              "callee": {
+                                "type": "MemberExpression",
+                                "computed": false,
+                                "object": {
+                                  "type": "Identifier",
+                                  "name": "tableRow"
+                                },
+                                "property": {
+                                  "type": "Identifier",
+                                  "name": "push"
+                                }
+                              },
+                              "arguments": [
+                                {
+                                  "type": "MemberExpression",
+                                  "computed": false,
+                                  "object": {
+                                    "type": "Identifier",
+                                    "name": "menu"
+                                  },
+                                  "property": {
+                                    "type": "Identifier",
+                                    "name": "disable"
+                                  }
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "type": "ExpressionStatement",
+                            "expression": {
+                              "type": "CallExpression",
+                              "callee": {
+                                "type": "MemberExpression",
+                                "computed": false,
+                                "object": {
+                                  "type": "Identifier",
+                                  "name": "tableRow"
+                                },
+                                "property": {
+                                  "type": "Identifier",
+                                  "name": "push"
+                                }
+                              },
+                              "arguments": [
+                                {
+                                  "type": "MemberExpression",
+                                  "computed": false,
+                                  "object": {
+                                    "type": "Identifier",
+                                    "name": "menu"
+                                  },
+                                  "property": {
+                                    "type": "Identifier",
+                                    "name": "displayOrder"
+                                  }
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "type": "ExpressionStatement",
+                            "expression": {
+                              "type": "CallExpression",
+                              "callee": {
+                                "type": "MemberExpression",
+                                "computed": false,
+                                "object": {
+                                  "type": "Identifier",
+                                  "name": "tableRow"
+                                },
+                                "property": {
+                                  "type": "Identifier",
+                                  "name": "push"
+                                }
+                              },
+                              "arguments": [
+                                {
+                                  "type": "MemberExpression",
+                                  "computed": false,
+                                  "object": {
+                                    "type": "Identifier",
+                                    "name": "menu"
+                                  },
+                                  "property": {
+                                    "type": "Identifier",
+                                    "name": "placement"
+                                  }
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "type": "ReturnStatement",
+                            "argument": {
+                              "type": "Identifier",
+                              "name": "tableRow"
+                            }
+                          }
+                        ]
+                      },
+                      "generator": false,
+                      "expression": false
+                    }
+                  ]
+                },
+                "generator": false,
+                "expression": false
+              }
+            ]
+          },
+          "generator": false,
+          "expression": false
+        },
+        "arguments": []
+      }
+    }
+  ],
+  "sourceType": "script"
+}
