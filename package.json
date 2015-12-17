@@ -1,0 +1,27 @@
+{
+  "name": "javascript-helper",
+  "version": "1.0.0",
+  "description": "Helper module for processing javascript with esprima and escodegen modules",
+  "main": "javascript-helper.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/parrivp/javascript-helper.git"
+  },
+  "keywords": [
+    "javascript",
+    "helper"
+  ],
+  "author": "Parri Pandian",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/parrivp/javascript-helper/issues"
+  },
+  "homepage": "https://github.com/parrivp/javascript-helper#readme",
+  "dependencies": {
+    "escodegen": "^1.7.1",
+    "esprima": "^2.7.1"
+  }
+}
